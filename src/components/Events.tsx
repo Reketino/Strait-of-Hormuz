@@ -28,7 +28,7 @@ export default function Events({
                 key={i}
                 href={event.url}
                 target="_blank"
-                rel="noopener norefferer"
+                rel="noopener noreferrer"
                 className="
                 group flex items-start gap-3
                 p-3
