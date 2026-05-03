@@ -3,16 +3,18 @@ type Event = {
     url: string;
 };
 
-export default function Events({ events }: { events: Event[] }) {
+export default function Events({ 
+    events,
+    updatedAt
+}: { 
+    events: Event[]; 
+    updatedAt: string;
+}) {
     return (
         <section className="max-w-xl w-full mt-8">
-            <header className="flex items-center justify-between mb-3">
-            <h2 className="text-sm font-semibold tracking-wide text-gray-300">
-                Live News
-            </h2>
-            <span className="text-xs text-green-400 animate-pulse">
-               ● LIVE 
-            </span>
+            <header className="flex items-center justify-between mb-2 text-xs text-gray-400">
+            <span>News</span>
+             <span>Updated: {new Date(updatedAt).toLocaleTimeString()}</span>
             </header>
 
             <ul className="
