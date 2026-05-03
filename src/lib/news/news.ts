@@ -20,9 +20,7 @@ export async function fetchNews(): Promise<EventItem[]> {
   }
 
   return data.articles
-    .filter((a: any) => {
-      return isAllowedSource(a.source.name) && !isBlocked(a.url);
-    })
+    .filter((a: any) => !isBlocked(a.url))
     .map((a: any) => ({
       title: a.title,
       source: a.source.name,
