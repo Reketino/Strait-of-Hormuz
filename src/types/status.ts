@@ -1,4 +1,4 @@
-export type StraitStatus = "OPEN" | "DISRUPTED" | "CLOSED";
+export type StraitStatus = "YES" | "NO" | "MAYBE";
 
 export interface EventItem {
     title: string;
