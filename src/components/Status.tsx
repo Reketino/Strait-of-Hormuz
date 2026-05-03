@@ -2,9 +2,9 @@ import { StraitStatus } from "@/types/status";
 
 export default function Status ({ status }: { status: StraitStatus }) {
     const color =
-    status === "OPEN"
+    status === "YES"
     ? "text-green-400"
-    : status === "DISRUPTED"
+    : status === "MAYBE"
     ? "text-yellow-400"
     : "text-red-500";
 
