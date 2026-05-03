@@ -20,7 +20,7 @@ export async function getOilPrice(): Promise<OilData> {
         "https://api.api-ninjas.com/v1/commodityprice?name=brent_crude_oil",
         {
             headers: {
-                "api-key": process.env.NINJA_API_KEY!,
+                "X-api-key": process.env.NINJA_API_KEY!,
             },
         } 
     );
@@ -32,7 +32,7 @@ export async function getOilPrice(): Promise<OilData> {
     const data = await res.json();
 
     const result: OilData = {
-        price: data.prrice,
+        price: data.price,
         change: data.change ?? 0,
         updatedAt: now,
     };

@@ -2,6 +2,7 @@ import Background from "@/components/Background";
 import Status from "@/components/Status";
 import Events from "@/components/Events";
 import { getStatusData } from "@/lib/getStatus";
+import Oil from "@/components/Brentcrude";
 
 export default async function Page() {
   const data = await getStatusData();
@@ -26,6 +27,8 @@ export default async function Page() {
     </p>
 
     <Events events={data.events} />
+
+    <Oil price ={data.oil.price} change={data.oil.change} />
 
     </main>
   )
