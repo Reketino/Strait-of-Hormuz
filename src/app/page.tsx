@@ -24,13 +24,7 @@ export default async function Page() {
     <Status status={data.status} />
     <Oil price={data.oil.price} change={data.oil.change} />
     </section>
-
-    <p className="text-sm text-gray-400">
-      Updated: {new Date(data.updatedAt).toLocaleTimeString()}
-    </p>
-
-    <Events events={data.events} />
-
+    <Events events={data.events} updatedAt={data.updatedAt} />
     </main>
   )
 }
