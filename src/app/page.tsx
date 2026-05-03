@@ -12,7 +12,7 @@ export default async function Page() {
     relative min-h-screen
     flex flex-col
     items-center justify-center
-    text-white p-6
+    text-white p-4
     ">
       <Background />
 
@@ -20,16 +20,16 @@ export default async function Page() {
       Is Strait of Hormuz Open?
     </h1>
 
+    <section className="flex flex-col items-center">
     <Status status={data.status} />
     <Oil price={data.oil.price} change={data.oil.change} />
+    </section>
 
-    <p className="text-sm text-gray-400 mt-4">
+    <p className="text-sm text-gray-400">
       Updated: {new Date(data.updatedAt).toLocaleTimeString()}
     </p>
 
     <Events events={data.events} />
-
-    
 
     </main>
   )
