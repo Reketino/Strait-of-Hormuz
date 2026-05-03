@@ -14,6 +14,11 @@ export async function fetchNews(): Promise<EventItem[]> {
 
   const data = await res.json();
 
+  if (!data.articles) {
+    console.error("News API is having a tuff time:", data);
+    return [];
+  }
+
   return data.articles
     .filter((a: any) => {
       return isAllowedSource(a.source.name) && !isBlocked(a.url);
