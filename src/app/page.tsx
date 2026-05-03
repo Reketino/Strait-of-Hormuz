@@ -22,6 +22,8 @@ export default async function Page() {
 
     <Status status={data.status} />
 
+    <Oil price ={data.oil.price} change={data.oil.change} />
+
     <p className="text-sm text-gray-400 mt-4">
       Updated: {new Date(data.updatedAt).toLocaleTimeString()}
     </p>
