@@ -13,7 +13,7 @@ export default function Events({
     return (
         <section className="max-w-xl w-full mt-8">
             <header className="flex items-center justify-between mb-2 text-xs text-gray-400">
-            <span>Live News</span>
+            <span>News</span>
              <span>Updated: {new Date(updatedAt).toLocaleTimeString()}</span>
             </header>
 
