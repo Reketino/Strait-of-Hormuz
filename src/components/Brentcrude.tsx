@@ -4,7 +4,8 @@ type Props = {
 };
 
 export default function Oil({ price, change }: Props) {
-    const isUp = change >= 0;
+    const isUp = change > 0;
+    const isDown = change < 0; 
 
     return (
         <section className="mt-6 text-center">
@@ -15,7 +16,10 @@ export default function Oil({ price, change }: Props) {
             </p>
 
             <p className={`text-sm ${isUp ? "text-green-400" : "text-red-400"}`}>
-                {isUp ? "▲" : "▼"} {Math.abs(change).toFixed(2)}
+                {isUp && "▲"} 
+                {isDown && "▼"} 
+                {!isUp && !isDown && "-"}{" "}
+                {Math.abs(change).toFixed(2)}
             </p>
         </section>
     );
