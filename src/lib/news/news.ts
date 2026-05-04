@@ -9,7 +9,7 @@ export async function fetchNews(): Promise<EventItem[]> {
   
   const res = await fetch(
     `https://newsapi.org/v2/everything?q=("strait of hormuz" OR "hormuz strait")&from=${from}&language=en&sortBy=publishedAt&pageSize=10&apiKey=${process.env.NEWS_API_KEY}`,
-    { next: { revalidate: 60 } } as RequestInit,
+    { next: { revalidate: 60 * 60 * 4 } } as RequestInit,
   );
 
   const data = await res.json();
