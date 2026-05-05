@@ -6,6 +6,7 @@ type Props = {
 export default function Oil({ price, change }: Props) {
     const isUp = change > 0;
     const isDown = change < 0; 
+    const isBigMove = Math.abs(change) > 2;
 
     return (
         <section className="mt-6 text-center">
