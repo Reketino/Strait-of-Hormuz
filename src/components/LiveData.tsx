@@ -16,18 +16,25 @@ export default function LiveData({ initialData}: {initialData: Data }) {
     const [data, setData] = useState(initialData);
 
     useEffect(() => {
-        const interval = setInterval(async () => {
+        let interval: NodeJS.Timeout;
+            
+        const startPolling = () => {
+        interval = setInterval(async () => {
             try {
+                if (document.hidden) return;
                 const res = await fetch("/api/status");
                 const fresh = await res.json();
 
                 setData(fresh);
             } catch (err) {
-                console.error("Live update has faulted", err);
+                console.error("Live update has failed", err);
             }
-            }, 60000);
+            },  60000);
+        };
 
-            return () => clearInterval(interval);
+        startPolling();
+
+        return () => clearInterval(interval);
         },[]);
 
         return (
