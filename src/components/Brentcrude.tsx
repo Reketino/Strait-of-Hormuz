@@ -16,11 +16,12 @@ export default function Oil({ price, change }: Props) {
                 ${price.toFixed(2)}
             </p>
 
-            <p className={`text-sm ${isUp ? "text-green-400" : "text-red-400"}`}>
-                {isUp && "▲"} 
-                {isDown && "▼"} 
-                {!isUp && !isDown && "-"}{" "}
-                {Math.abs(change).toFixed(2)}
+            <p className={`
+                text-sm flex items-center justify-center gap-1 
+                ${isUp ? "text-green-400" : ""}
+                ${isDown ? "text-red-400 animate-[shake_0.3s_ease-in-out]" : ""} 
+                ${!isUp && !isDown ? "text-gray-400" : ""}
+                `}>
             </p>
         </section>
     );
