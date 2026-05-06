@@ -59,7 +59,11 @@ export default function Oil({ price, change }: Props) {
 
         {Math.abs(change).toFixed(2)}
 
-        {isBigMove && <span className="text-yellow-300 text-xs">⚡</span>}
+        {isBigMove &&( 
+          <span className="text-yellow-300 text-xs">
+            ⚡
+          </span>
+        )}
       </p>
     </section>
   );
