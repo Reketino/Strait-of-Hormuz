@@ -12,7 +12,7 @@ export default function Oil({ price, change }: Props) {
         <section className="mt-6 text-center">
             <p className="text-xs text-gray-500 uppercase tracking-wide">Brent Crude</p>
 
-            <p className="text-3xl font-bold">
+            <p className={`text-3xl font-bold ${isBigMove ? "text-yellow-300" : ""}`}>
                 ${price.toFixed(2)}
             </p>
 
