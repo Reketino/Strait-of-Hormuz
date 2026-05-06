@@ -28,7 +28,7 @@ export default function Oil({ price, change }: Props) {
     }, 800);
 
     return clearTimeout(timeout);
-  }, [price])
+  }, [price]);
 
   return (
     <section className="mt-6 text-center">
@@ -36,12 +36,14 @@ export default function Oil({ price, change }: Props) {
         Brent Crude
       </p>
 
-      <p className={`
+      <p
+        className={`
         text-3xl font-bold transition-all duration-300 
         ${isBigMove ? "text-yellow-300" : ""}
         ${flash === "up" ? "animate-[flash-green_0.8s_ease]" : ""}
         ${flash === "down" ? "animate-[flash-green_0.8s_ease]" : ""}
-        `}>
+        `}
+      >
         ${price.toFixed(2)}
       </p>
 
@@ -59,11 +61,7 @@ export default function Oil({ price, change }: Props) {
 
         {Math.abs(change).toFixed(2)}
 
-        {isBigMove &&( 
-          <span className="text-yellow-300 text-xs">
-            ⚡
-          </span>
-        )}
+        {isBigMove && <span className="text-yellow-300 text-xs">⚡</span>}
       </p>
     </section>
   );
