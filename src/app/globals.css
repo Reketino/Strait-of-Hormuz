@@ -30,6 +30,17 @@
       transform: translateX(2px);
     }
   }
+
+  @keyframes flash-green {
+    0% {
+      color: rgb(74 222 128);
+      transform: scale(1.05);
+    }
+    100% {
+      color: inherit;
+      transform: scale(1);
+    }
+  }
 }
 
 body {
