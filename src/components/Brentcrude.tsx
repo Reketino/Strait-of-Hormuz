@@ -25,6 +25,10 @@ export default function Oil({ price, change }: Props) {
                     <span className={isUp ? "animate-pulse" : ""}>
                         {isUp ? "▲" : isDown ? "▼" : "-"}
                     </span>
+
+                    {Math.abs(change).toFixed(2)}
+
+                    {isBigMove && <span className="text-yellow-300 text-xs">⚡</span>}
             </p>
         </section>
     );
