@@ -1,9 +1,13 @@
+import { useEffect, useRef, useState } from "react";
+
 type Props = {
   price: number;
   change: number;
 };
 
 export default function Oil({ price, change }: Props) {
+  const previousPrice = useRef(price);
+  const [flash, setFlash] = useState<"up" | "down" | null>(null);
   const isUp = change > 0;
   const isDown = change < 0;
   const isBigMove = Math.abs(change) > 2;
