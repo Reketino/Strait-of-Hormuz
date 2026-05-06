@@ -22,6 +22,9 @@ export default function Oil({ price, change }: Props) {
                 ${isDown ? "text-red-400 animate-[shake_0.3s_ease-in-out]" : ""} 
                 ${!isUp && !isDown ? "text-gray-400" : ""}
                 `}>
+                    <span className={isUp ? "animate-pulse" : ""}>
+                        {isUp ? "▲" : isDown ? "▼" : "-"}
+                    </span>
             </p>
         </section>
     );
