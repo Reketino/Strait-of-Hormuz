@@ -7,9 +7,10 @@ type Props = {
 
 export default function Oil({ price, change }: Props) {
   const previousPrice = useRef(price);
+  const calculatedChange = price - previousPrice.current;
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
-  const isUp = change > 0;
-  const isDown = change < 0;
+  const isUp = calculatedChange > 0;
+  const isDown = calculatedChange < 0;
   const isBigMove = Math.abs(change) > 2;
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Oil({ price, change }: Props) {
         text-3xl font-bold transition-all duration-300 
         ${isBigMove ? "text-yellow-300" : ""}
         ${flash === "up" ? "animate-[flash-green_0.8s_ease]" : ""}
-        ${flash === "down" ? "animate-[flash-green_0.8s_ease]" : ""}
+        ${flash === "down" ? "animate-[flash-red_0.8s_ease]" : ""}
         `}
       >
         ${price.toFixed(2)}
@@ -59,7 +60,7 @@ export default function Oil({ price, change }: Props) {
           {isUp ? "▲" : isDown ? "▼" : "-"}
         </span>
 
-        {Math.abs(change).toFixed(2)}
+        {Math.abs(calculatedChange).toFixed(2)}
 
         {isBigMove && <span className="text-yellow-300 text-xs">⚡</span>}
       </p>
