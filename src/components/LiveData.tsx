@@ -6,38 +6,45 @@ import Oil from "./Brentcrude";
 import Events from "./Events";
 
 type Data = {
-    status: "YES" | "MAYBE" | "NO";
-    events: { title: string; url: string }[];
-    oil: { price: number; change: number };
-    updatedAt: string;
+  status: "YES" | "MAYBE" | "NO";
+  events: { title: string; url: string }[];
+  oil: { price: number; change: number };
+  updatedAt: string;
 };
 
-export default function LiveData({ initialData}: {initialData: Data }) {
-    const [data, setData] = useState(initialData);
+export default function LiveData({ initialData }: { initialData: Data }) {
+  const [data, setData] = useState(initialData);
 
-    useEffect(() => {
-        const interval = setInterval(async () => {
-            try {
-                const res = await fetch("/api/status");
-                const fresh = await res.json();
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
 
-                setData(fresh);
-            } catch (err) {
-                console.error("Live update has faulted", err);
-            }
-            }, 60000);
+    const startPolling = () => {
+      interval = setInterval(async () => {
+        try {
+          if (document.hidden) return;
+          const res = await fetch("/api/status");
+          const fresh = await res.json();
 
-            return () => clearInterval(interval);
-        },[]);
+          setData(fresh);
+        } catch (err) {
+          console.error("Live update has failed", err);
+        }
+      }, 60000);
+    };
 
-        return (
-            <>
-            <section className="flex flex-col items-center">
-                <Status status={data.status} />
-                <Oil price={data.oil.price} change={data.oil.change} />
-            </section>
+    startPolling();
 
-            <Events events={data.events} updatedAt={data.updatedAt} />
-            </>
-        );
-    }
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <>
+      <section className="flex flex-col items-center">
+        <Status status={data.status} />
+        <Oil price={data.oil.price} change={data.oil.change} />
+      </section>
+
+      <Events events={data.events} updatedAt={data.updatedAt} />
+    </>
+  );
+}
