@@ -28,6 +28,7 @@ export default function Events({ events, updatedAt }: Props) {
     <section className="max-w-xl w-full mt-8">
       <header className="flex items-center justify-between mb-3 px-1">
         <div className="flex items-center gap-2">
+        <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
         <span>News</span>
         </div>
         <span>Updated: {timeAgo}</span>
