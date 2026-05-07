@@ -2,10 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 type Props = {
   price: number;
-  change: number;
 };
 
-export default function Oil({ price, change }: Props) {
+export default function Oil({ price }: Props) {
   const previousPrice = useRef(price);
   const [calculatedChange, setCalculatedChange] = useState(0);
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
