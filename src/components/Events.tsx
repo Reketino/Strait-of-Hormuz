@@ -8,6 +8,11 @@ type Event = {
   url: string;
 };
 
+type Props = {
+  events: string;
+  updatedAt: string;
+}
+
 
 export default function Events({
   events,
