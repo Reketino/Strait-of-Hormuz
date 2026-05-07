@@ -36,24 +36,6 @@ export default function Oil({ price, change }: Props) {
   const isDown = calculatedChange < 0;
   const isBigMove = Math.abs(change) > 2;
 
-  useEffect(() => {
-    if (price > previousPrice.current) {
-      setFlash("up");
-    }
-
-    if (price < previousPrice.current) {
-      setFlash("down");
-    }
-
-    previousPrice.current = price;
-
-    const timeout = setTimeout(() => {
-      setFlash(null);
-    }, 800);
-
-    return clearTimeout(timeout);
-  }, [price]);
-
   return (
     <section className="mt-6 text-center">
       <p className="text-xs text-gray-500 uppercase tracking-wide">
