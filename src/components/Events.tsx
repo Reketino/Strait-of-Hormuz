@@ -39,7 +39,15 @@ export default function Events({ events, updatedAt }: Props) {
           </p>
       </header>
 
-      <ul className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
+      <ul className="
+      overflow-hidden
+      rounded-3xl 
+      backdrop-blur-2xl 
+      border border-white/10  
+      bg-white/4
+      shadow-2xl shadow-black/30
+      "
+      >
         {events.map((event, i) => (
           <a
             key={i}
