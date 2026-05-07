@@ -7,7 +7,7 @@ type Props = {
 
 export default function Oil({ price, change }: Props) {
   const previousPrice = useRef(price);
-  const calculatedChange = price - previousPrice.current;
+  const [calculatedChange, setCalculatedChange] = useState(0)
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Oil({ price, change }: Props) {
   
     return () => clearTimeout(timeout);
     }, [price]);
-    
+
   const isUp = calculatedChange > 0;
   const isDown = calculatedChange < 0;
   const isBigMove = Math.abs(change) > 2;
