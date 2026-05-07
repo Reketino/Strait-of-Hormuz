@@ -7,7 +7,7 @@ type Props = {
 
 export default function Oil({ price, change }: Props) {
   const previousPrice = useRef(price);
-  const [calculatedChange, setCalculatedChange] = useState(0)
+  const [calculatedChange, setCalculatedChange] = useState(0);
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Oil({ price, change }: Props) {
       setFlash("up");
     }
 
-    if (diff < 0 ) {
+    if (diff < 0) {
       setFlash("down");
     }
 
@@ -28,9 +28,9 @@ export default function Oil({ price, change }: Props) {
     const timeout = setTimeout(() => {
       setFlash(null);
     }, 800);
-  
+
     return () => clearTimeout(timeout);
-    }, [price]);
+  }, [price]);
 
   const isUp = calculatedChange > 0;
   const isDown = calculatedChange < 0;
