@@ -33,7 +33,10 @@ export default function Events({ events, updatedAt }: Props) {
           News
           </p>
         </div>
-        <span>Updated: {timeAgo}</span>
+
+        <p className="text-xs text-gray-500">
+          Updated: {timeAgo}
+          </p>
       </header>
 
       <ul className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
