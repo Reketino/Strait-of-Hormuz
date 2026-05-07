@@ -11,10 +11,10 @@ type Event = {
 type Props = {
   events: Event[];
   updatedAt: string;
-}
+};
 
 export default function Events({ events, updatedAt }: Props) {
-    const [timeAgo, setTimeAgo] = useState(formatTimeAgo(updatedAt));
+  const [timeAgo, setTimeAgo] = useState(formatTimeAgo(updatedAt));
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,25 +28,33 @@ export default function Events({ events, updatedAt }: Props) {
     <section className="max-w-xl w-full mt-8">
       <header className="flex items-center justify-between mb-3 px-1">
         <div className="flex items-center gap-2">
-        <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-        <p className="text-xs uppercase tracking-[0.2em] text-gray-400">
-          News
+          <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-400">
+            News
           </p>
         </div>
 
-        <p className="text-xs text-gray-500">
-          Updated: {timeAgo}
-          </p>
+        <p className="text-xs text-gray-500">Updated: {timeAgo}</p>
       </header>
 
-      <ul className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
+      <ul
+        className="
+      overflow-hidden
+      rounded-3xl 
+      backdrop-blur-2xl 
+      border border-white/10  
+      bg-white/4
+      shadow-2xl shadow-black/30
+      "
+      >
         {events.map((event, i) => (
           <a
             key={i}
             href={event.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-start gap-3 p-3 hover:bg-white/10 transition">
+            className="group flex items-start gap-3 p-3 hover:bg-white/10 transition"
+          >
             <span className="text-xs text-gray-400 w-4 mt-1">{i + 1}</span>
 
             <span className="flex-1 text-sm text-gray-200 group-hover:text-white leading-relaxed">

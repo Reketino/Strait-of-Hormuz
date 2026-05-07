@@ -3,10 +3,8 @@ import { EventItem } from "@/types/status";
 
 export async function fetchNews(): Promise<EventItem[]> {
   const today = new Date();
-  const from = new Date(
-    today.getTime() - 1000 * 60 * 60 * 48
-  ).toISOString();
-  
+  const from = new Date(today.getTime() - 1000 * 60 * 60 * 48).toISOString();
+
   const res = await fetch(
     `https://newsapi.org/v2/everything?q=("strait of hormuz" OR "hormuz strait")&from=${from}&language=en&sortBy=publishedAt&pageSize=10&apiKey=${process.env.NEWS_API_KEY}`,
     { next: { revalidate: 60 * 60 * 4 } } as RequestInit,
