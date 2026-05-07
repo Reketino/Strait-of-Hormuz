@@ -34,7 +34,7 @@ export default function Oil({ price, change }: Props) {
 
   const isUp = calculatedChange > 0;
   const isDown = calculatedChange < 0;
-  const isBigMove = Math.abs(change) > 2;
+  const isBigMove = Math.abs(calculatedChange) > 2;
 
   return (
     <section className="mt-6 text-center">
