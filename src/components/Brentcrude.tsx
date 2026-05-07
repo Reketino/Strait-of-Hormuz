@@ -9,6 +9,29 @@ export default function Oil({ price, change }: Props) {
   const previousPrice = useRef(price);
   const calculatedChange = price - previousPrice.current;
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
+
+  useEffect(() => {
+    const diff = price - previousPrice.current;
+
+    setCalculatedChange(diff);
+
+    if (diff > 0) {
+      setFlash("up");
+    }
+
+    if (diff < 0 ) {
+      setFlash("down");
+    }
+
+    previousPrice.current = price;
+
+    const timeout = setTimeout(() => {
+      setFlash(null);
+    }, 800);
+  
+    return () => clearTimeout(timeout);
+    }, [price]);
+    
   const isUp = calculatedChange > 0;
   const isDown = calculatedChange < 0;
   const isBigMove = Math.abs(change) > 2;
