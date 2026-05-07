@@ -8,7 +8,7 @@ import Events from "./Events";
 type Data = {
   status: "YES" | "MAYBE" | "NO";
   events: { title: string; url: string }[];
-  oil: { price: number; change: number };
+  oil: { price: number };
   updatedAt: string;
 };
 
