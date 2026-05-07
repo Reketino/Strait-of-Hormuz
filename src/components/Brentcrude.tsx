@@ -2,23 +2,23 @@ import { useEffect, useRef, useState } from "react";
 
 type Props = {
   price: number;
-  change: number;
 };
 
-export default function Oil({ price, change }: Props) {
+export default function Oil({ price }: Props) {
   const previousPrice = useRef(price);
-  const calculatedChange = price - previousPrice.current;
+  const [calculatedChange, setCalculatedChange] = useState(0);
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
-  const isUp = calculatedChange > 0;
-  const isDown = calculatedChange < 0;
-  const isBigMove = Math.abs(change) > 2;
 
   useEffect(() => {
-    if (price > previousPrice.current) {
+    const diff = price - previousPrice.current;
+
+    setCalculatedChange(diff);
+
+    if (diff > 0) {
       setFlash("up");
     }
 
-    if (price < previousPrice.current) {
+    if (diff < 0) {
       setFlash("down");
     }
 
@@ -28,8 +28,12 @@ export default function Oil({ price, change }: Props) {
       setFlash(null);
     }, 800);
 
-    return clearTimeout(timeout);
+    return () => clearTimeout(timeout);
   }, [price]);
+
+  const isUp = calculatedChange > 0;
+  const isDown = calculatedChange < 0;
+  const isBigMove = Math.abs(calculatedChange) > 2;
 
   return (
     <section className="mt-6 text-center">
