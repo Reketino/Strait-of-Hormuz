@@ -9,18 +9,11 @@ type Event = {
 };
 
 type Props = {
-  events: string;
+  events: Event[];
   updatedAt: string;
 }
 
-
-export default function Events({
-  events,
-  updatedAt,
-}: {
-  events: Event[];
-  updatedAt: string;
-}) {
+export default function Events({ events, updatedAt }: Props) {
     const [timeAgo, setTimeAgo] = useState(formatTimeAgo(updatedAt));
 
   useEffect(() => {
