@@ -41,7 +41,7 @@ export default function LiveData({ initialData }: { initialData: Data }) {
     <>
       <section className="flex flex-col items-center">
         <Status status={data.status} />
-        <Oil price={data.oil.price} change={data.oil.change} />
+        <Oil price={data.oil.price} />
       </section>
 
       <Events events={data.events} updatedAt={data.updatedAt} />
