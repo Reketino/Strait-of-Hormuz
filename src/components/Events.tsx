@@ -53,7 +53,12 @@ export default function Events({ events, updatedAt }: Props) {
             href={event.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-start gap-3 p-3 hover:bg-white/10 transition"
+            className="
+            group 
+            flex items-start gap-4 
+            px-5 py-4
+            transition-all duration-300 
+            hover:bg-white/6"
           >
             <span className="text-xs text-gray-400 w-4 mt-1">{i + 1}</span>
 
