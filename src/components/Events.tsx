@@ -51,9 +51,12 @@ export default function Events({ events, updatedAt }: Props) {
               </span>
             </div>
 
+            <div className="flex-1">
             <span className="text-sm text-gray-200 transition-colors duration-300 group-hover:text-white leading-relaxed">
               {event.title}
             </span>
+            </div>
+
             <p className="text-gray-500 opacity-0 group-hover:opacity-100 transition transform group-hover:translate-x-1">
               →
             </p>
