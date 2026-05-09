@@ -37,30 +37,19 @@ export default function Events({ events, updatedAt }: Props) {
         <p className="text-xs text-gray-500">Updated: {timeAgo}</p>
       </header>
 
-      <ul
-        className="
-      overflow-hidden
-      rounded-3xl 
-      backdrop-blur-2xl 
-      border border-white/10  
-      bg-white/4
-      shadow-2xl shadow-black/30
-      "
-      >
+      <ul className="overflow-hidden rounded-3xl backdrop-blur-2xl border border-white/10  bg-white/4 shadow-2xl shadow-black/30">
         {events.map((event, i) => (
           <a
             key={i}
             href={event.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="
-            group 
-            flex items-start gap-4 
-            px-5 py-4
-            transition-all duration-300 
-            hover:bg-white/6"
-          >
-            <span className="text-xs text-gray-400 w-4 mt-1">{i + 1}</span>
+            className="group flex items-start gap-4 px-5 py-4 transition-all duration-300 hover:bg-white/6">
+            <div className = "flex flex-col items-center">
+            <span className=" mt-1 text-xs font-medium text-gray-500 w-5">
+              {i + 1}
+              </span>
+            </div>
 
             <span className="flex-1 text-sm text-gray-200 group-hover:text-white leading-relaxed">
               {event.title}
