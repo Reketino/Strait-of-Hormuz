@@ -1,3 +1,4 @@
+
 import Background from "@/components/Background";
 import Status from "@/components/Status";
 import Events from "@/components/Events";
