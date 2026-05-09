@@ -41,11 +41,15 @@ export default function Oil({ price }: Props) {
         Brent Crude
       </p>
 
-      <p className={`text-3xl font-bold transition-all duration-300 ${isBigMove ? "text-yellow-300" : ""} ${flash === "up" ? "animate-[flash-green_0.8s_ease]" : ""} ${flash === "down" ? "animate-[flash-red_0.8s_ease]" : ""}`}>
+      <p
+        className={`text-3xl font-bold transition-all duration-300 ${isBigMove ? "text-yellow-300" : ""} ${flash === "up" ? "animate-[flash-green_0.8s_ease]" : ""} ${flash === "down" ? "animate-[flash-red_0.8s_ease]" : ""}`}
+      >
         ${price.toFixed(2)}
       </p>
 
-      <p className={`text-sm flex items-center justify-center gap-1 ${isUp ? "text-green-400" : ""} ${isDown ? "text-red-400 animate-[shake_0.3s_ease-in-out]" : ""} ${!isUp && !isDown ? "text-gray-400" : ""}`}>
+      <p
+        className={`text-sm flex items-center justify-center gap-1 ${isUp ? "text-green-400" : ""} ${isDown ? "text-red-400 animate-[shake_0.3s_ease-in-out]" : ""} ${!isUp && !isDown ? "text-gray-400" : ""}`}
+      >
         <span className={isUp ? "animate-pulse" : ""}>
           {isUp ? "▲" : isDown ? "▼" : "-"}
         </span>
