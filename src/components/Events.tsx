@@ -44,19 +44,23 @@ export default function Events({ events, updatedAt }: Props) {
             href={event.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-start gap-4 px-5 py-4 transition-all duration-300 hover:bg-white/6">
-            <div className = "flex flex-col items-center">
-            <span className=" mt-1 text-xs font-medium text-gray-500 w-5">
-              {i + 1}
+            className="group flex items-start gap-4 px-5 py-4 transition-all duration-300 hover:bg-white/6"
+          >
+            <div className="flex flex-col items-center">
+              <span className=" mt-1 text-xs font-medium text-gray-500 w-5">
+                {i + 1}
               </span>
             </div>
 
-            <span className="flex-1 text-sm text-gray-200 group-hover:text-white leading-relaxed">
-              {event.title}
+            <div className="flex-1">
+              <span className="text-sm text-gray-200 transition-colors duration-300 group-hover:text-white leading-relaxed">
+                {event.title}
+              </span>
+            </div>
+
+            <span className="text-gray-600 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white">
+              ↗️
             </span>
-            <p className="text-gray-500 opacity-0 group-hover:opacity-100 transition transform group-hover:translate-x-1">
-              →
-            </p>
           </a>
         ))}
       </ul>
