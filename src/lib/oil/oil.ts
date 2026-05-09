@@ -5,7 +5,6 @@ export type OilData = {
 };
 
 export async function getOilPrice(): Promise<OilData> {
-
   const res = await fetch(
     "https://api.api-ninjas.com/v1/commodityprice?name=brent_crude_oil",
     {
