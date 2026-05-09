@@ -57,8 +57,8 @@ export default function Events({ events, updatedAt }: Props) {
             </span>
             </div>
 
-            <p className="text-gray-500 opacity-0 group-hover:opacity-100 transition transform group-hover:translate-x-1">
-              →
+            <p className="text-gray-600 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white">
+              ↗️
             </p>
           </a>
         ))}
