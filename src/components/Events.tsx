@@ -6,6 +6,7 @@ import { formatTimeAgo } from "@/lib/utils/time";
 type Event = {
   title: string;
   url: string;
+  source: string;
 };
 
 type Props = {
