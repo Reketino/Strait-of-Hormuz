@@ -56,15 +56,16 @@ export default function Events({ events, updatedAt }: Props) {
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
                 <img
-                src={`https://www.google.com/s2/favicons?domain=${new URL(event.url).hostname}&sz=32`}
-                alt="News Source"
-                className="w-4 h-4 rounded-sm"
+                  src={`https://www.google.com/s2/favicons?domain=${new URL(event.url).hostname}&sz=32`}
+                  alt="News Source"
+                  className="w-4 h-4 rounded-sm"
                 />
 
                 <span className="text-[11px] uppercase tracking-wide text-gray-500">
                   {event.source}
                 </span>
               </div>
+
               <span className="text-sm text-gray-200 transition-colors duration-300 group-hover:text-white leading-relaxed">
                 {event.title}
               </span>
