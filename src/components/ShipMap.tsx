@@ -8,6 +8,9 @@ export default function ShipMap() {
                     Live Ship Traffic
                 </p>
             </div>
+            <p className="text-xs text-gray-500">
+                Strait of Hormuz
+            </p>
         </header>
     </section>
 }
