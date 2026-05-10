@@ -3,6 +3,10 @@ export default function ShipMap() {
         <header className="flex items-center justify-between mb-3 px-1">
             <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
+
+                <p className="text-xs uppercase tracking-[0.2em] text-gray-400">
+                    Live Ship Traffic
+                </p>
             </div>
         </header>
     </section>
