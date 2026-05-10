@@ -7,8 +7,14 @@ import Events from "./Events";
 
 type Data = {
   status: "YES" | "MAYBE" | "NO";
-  events: { title: string; url: string }[];
-  oil: { price: number };
+  events: { 
+    title: string; 
+    url: string 
+    source: string
+  }[];
+  oil: 
+  { price: number; 
+  };
   updatedAt: string;
 };
 
