@@ -10,5 +10,9 @@ export default function ShipMap() {
       </div>
       <p className="text-xs text-gray-500">Strait of Hormuz</p>
     </header>
+
+    <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/4 backdrop-blur-2xl shadow-2xl shadow-black/30">
+    
+    </div>
   </section>;
 }
