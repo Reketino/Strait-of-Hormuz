@@ -20,5 +20,5 @@ export default function ShipMap() {
       />
     </div>
   </section>
-  );
+  )
 }
