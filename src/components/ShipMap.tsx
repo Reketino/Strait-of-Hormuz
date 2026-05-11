@@ -1,4 +1,5 @@
 export default function ShipMap() {
+  return (
   <section className="w-full max-w-6xl mt-10">
     <header className="flex items-center justify-between mb-3 px-1">
       <div className="flex items-center gap-2">
@@ -18,5 +19,6 @@ export default function ShipMap() {
         loading="lazy"
       />
     </div>
-  </section>;
+  </section>
+  );
 }
