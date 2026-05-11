@@ -1,9 +1,5 @@
-
 import Background from "@/components/Background";
-import Status from "@/components/Status";
-import Events from "@/components/Events";
 import { getStatusData } from "@/lib/getStatus";
-import Oil from "@/components/Brentcrude";
 import LiveData from "@/components/LiveData";
 
 export default async function Page() {
