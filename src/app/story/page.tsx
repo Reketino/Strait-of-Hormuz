@@ -4,7 +4,7 @@ export default function StoryPage(){
 <section className="relative h-screen flex items-center justify-center overflow-hidden">
  <header className="absolute inset-0 bg-black">
     <img
-    src=""
+    src="/hormuz-hero.webp"
     alt=""
     />
 
