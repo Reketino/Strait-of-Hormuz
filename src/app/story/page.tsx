@@ -1,3 +1,5 @@
+
+export default function StoryPage(){
 <section className="">
 <div className="">
     <img
@@ -10,3 +12,4 @@
 
 
 </section>
+}
