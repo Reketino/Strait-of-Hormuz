@@ -6,6 +6,7 @@ export default function StoryPage(){
     <img
     src="/hormuz-hero.webp"
     alt=""
+    className="w-full h-full object-cover opacity-40"
     />
 
     <div className="" />
