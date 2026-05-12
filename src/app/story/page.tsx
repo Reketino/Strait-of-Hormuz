@@ -1,7 +1,7 @@
 
 export default function StoryPage(){
     return(
-<section className="">
+<section className="relative h-screen flex items-center justify-center overflow-hidden">
 <div className="">
     <img
     src=""
