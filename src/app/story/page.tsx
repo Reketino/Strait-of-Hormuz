@@ -1,15 +1,15 @@
 
 export default function StoryPage(){
     return(
-<section className="">
-<div className="">
+<section className="relative h-screen flex items-center justify-center overflow-hidden">
+ <header className="absolute inset-0 bg-black">
     <img
-    src=""
+    src="/hormuz-hero.webp"
     alt=""
     />
 
     <div className="" />
-</div>
+</header>
 
 
 </section>
