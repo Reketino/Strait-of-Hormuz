@@ -1,5 +1,6 @@
 
 export default function StoryPage(){
+    return(
 <section className="">
 <div className="">
     <img
@@ -12,4 +13,5 @@ export default function StoryPage(){
 
 
 </section>
+)
 }
