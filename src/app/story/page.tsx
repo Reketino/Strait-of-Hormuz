@@ -1,17 +1,17 @@
 
 export default function StoryPage(){
     return(
-<section className="relative h-screen flex items-center justify-center overflow-hidden">
-<div className="">
+<main className="relative h-screen flex items-center justify-center overflow-hidden">
+ <section className="absolute inset-0 bg-black">
     <img
     src=""
     alt=""
     />
 
     <div className="" />
-</div>
-
-
 </section>
+
+
+</main>
 )
 }
