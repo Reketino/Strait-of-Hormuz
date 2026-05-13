@@ -12,7 +12,7 @@ export async function getOilPrice(): Promise<OilData> {
         "X-api-key": process.env.NINJA_API_KEY!,
       },
       next: {
-        revalidate: 300,
+        revalidate: 10,
       },
     },
   );
