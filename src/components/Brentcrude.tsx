@@ -34,7 +34,7 @@ export default function Oil({ price }: Props) {
   const threshold = 0.01;
 
   const isUp = calculatedChange > threshold;
-  const isDown = calculatedChange < threshold;
+  const isDown = calculatedChange < -threshold;
   const isBigMove = Math.abs(calculatedChange) > 2;
 
   return (
