@@ -1,8 +1,9 @@
 
 export default function StoryPage(){
     return(
+        <main>
 <section className="relative h-screen flex items-center justify-center overflow-hidden">
- <header className="absolute inset-0 bg-black">
+ <figure className="absolute inset-0 bg-black">
     <img
     src="/hormuz-hero.webp"
     alt=""
@@ -10,9 +11,10 @@ export default function StoryPage(){
     />
 
     <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/60 to-black" />
-</header>
+</figure>
 
-<div className="">
+<article className="">
+    <header>
     <p className="">
         Strait of Hormuz
     </p>
@@ -22,13 +24,14 @@ export default function StoryPage(){
         <br />
         Powers the world
     </h1>
-</div>
+</header>
 
 <p className="">
     A narrow maritime corridor where oil, military strategy,
     and global economics collide.
 </p>
-
+</article>
 </section>
-)
+</main>
+);
 }
