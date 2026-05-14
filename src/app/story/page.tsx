@@ -13,9 +13,9 @@ export default function StoryPage(){
     <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/60 to-black" />
 </figure>
 
-<article className="">
+<article className="relative z-10 max-w-4xl px-6 text-center text-white">
     <header>
-    <p className="">
+    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-gray-400">
         Strait of Hormuz
     </p>
 
