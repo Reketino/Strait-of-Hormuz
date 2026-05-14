@@ -19,7 +19,7 @@ export default function StoryPage(){
         Strait of Hormuz
     </p>
 
-    <h1 className="">
+    <h1 className="text-6xl font-black tracking-tight md:text-8xl">
         The Strait That
         <br />
         Powers the world
