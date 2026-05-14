@@ -27,8 +27,8 @@ export default function StoryPage(){
 </header>
 
 <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300">
-    A narrow maritime corridor where oil, military strategy,
-    and global economics collide.
+    A narrow maritime corridor where oil, military strategy, global economics, 
+    Donald Trump & ayathollahs collide.
 </p>
 </article>
 </section>
