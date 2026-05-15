@@ -10,6 +10,7 @@ export async function GET() {
     return Response.json({
         status: manualStatus,
         events: events.slice(0, 5),
+        oil,
         updatedAt: new Date().toISOString(),
     });   
 }
