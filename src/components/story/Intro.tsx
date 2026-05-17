@@ -1,7 +1,7 @@
 export default function Intro() {
     return (
-        <section className="">
-        <article className="">
+        <section className="bg-black py-32">
+        <article className="mx-auto max-w-6xl px-6">
             
         </article>
             
