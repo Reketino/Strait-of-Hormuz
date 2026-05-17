@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 
 type Props = {
@@ -33,9 +35,10 @@ export default function Oil({ price }: Props) {
 
   const threshold = 0.01;
 
-  const isUp = calculatedChange > threshold;
-  const isDown = calculatedChange < -threshold;
+  const isUp = calculatedChange > 0;
+  const isDown = calculatedChange < 0;
   const isBigMove = Math.abs(calculatedChange) > 2;
+  const formattedChange = `${calculatedChange >= 0 ? "+" : ""}${calculatedChange.toFixed(2)}`;
 
   return (
     <section className="mt-6 text-center">
@@ -56,7 +59,7 @@ export default function Oil({ price }: Props) {
           {isUp ? "▲" : isDown ? "▼" : "-"}
         </span>
 
-        {Math.abs(calculatedChange).toFixed(2)}
+        {formattedChange}
 
         {isBigMove && <span className="text-yellow-300 text-xs">⚡</span>}
       </p>
