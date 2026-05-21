@@ -5,6 +5,10 @@ export default function Intro() {
             <p className="mb-4 text-sm uppercase tracking-[0.3em] text-gray-500">
                 Why it matters
             </p>
+
+            <h2 className="max-w-4xl text-5xl font-black leading-tight md:text-7xl">
+
+            </h2>
             
         </article>
             
