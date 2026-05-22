@@ -12,7 +12,7 @@ type Data = {
     url: string;
     source: string;
   }[];
-  oil: { price: number };
+  oil: { price: number; change: number };
   updatedAt: string;
 };
 
@@ -45,7 +45,7 @@ export default function LiveData({ initialData }: { initialData: Data }) {
     <>
       <section className="flex flex-col items-center">
         <Status status={data.status} />
-        <Oil price={data.oil.price} />
+        <Oil price={data.oil.price} change={data.oil.change} />
       </section>
 
       <Events events={data.events} updatedAt={data.updatedAt} />

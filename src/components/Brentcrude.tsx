@@ -1,44 +1,35 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   price: number;
+  change: number;
 };
 
-export default function Oil({ price }: Props) {
-  const previousPrice = useRef(price);
-  const [calculatedChange, setCalculatedChange] = useState(0);
+export default function Oil({ price, change }: Props) {
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
 
   useEffect(() => {
-    const diff = price - previousPrice.current;
-
-    setCalculatedChange(diff);
-
-    if (diff > 0) {
+    if (change > 0) {
       setFlash("up");
-    }
-
-    if (diff < 0) {
+    } else if (change < 0) {
       setFlash("down");
+    } else {
+      setFlash(null);
     }
-
-    previousPrice.current = price;
 
     const timeout = setTimeout(() => {
       setFlash(null);
     }, 800);
 
     return () => clearTimeout(timeout);
-  }, [price]);
+  }, [change]);
 
-  const threshold = 0.01;
-
-  const isUp = calculatedChange > 0;
-  const isDown = calculatedChange < 0;
-  const isBigMove = Math.abs(calculatedChange) > 2;
-  const formattedChange = `${calculatedChange >= 0 ? "+" : ""}${calculatedChange.toFixed(2)}`;
+  const isUp = change > 0;
+  const isDown = change < 0;
+  const isBigMove = Math.abs(change) > 2;
+  const formattedChange = `${change >= 0 ? "+" : ""}${change.toFixed(2)}`;
 
   return (
     <section className="mt-6 text-center">
