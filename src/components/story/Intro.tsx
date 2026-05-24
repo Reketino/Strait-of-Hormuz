@@ -7,7 +7,7 @@ export default function Intro() {
             </p>
 
             <h2 className="max-w-4xl text-5xl font-black leading-tight md:text-7xl">
-
+                Nearly 20% of the world's oil passes through this narrow waterway.
             </h2>
             
         </article>
