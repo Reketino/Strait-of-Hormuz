@@ -11,7 +11,9 @@ export default function Intro() {
             </h2>
 
             <p className="mt-10 max-w-2xl text-lg leading-relaxed text-gray-300">
-                
+         The Strait of Hormuz connects the Persian Gulf with global
+          shipping routes and remains one of the most strategically
+          important chokepoints on Earth.
             </p>
             
         </article>
