@@ -26,7 +26,7 @@ export default function LiveData({ initialData }: { initialData: Data }) {
       interval = setInterval(async () => {
         try {
           if (document.hidden) return;
-          const res = await fetch("/api/status");
+          const res = await fetch("/api/status", { cache: "no-store" });
           const fresh = await res.json();
 
           setData(fresh);
