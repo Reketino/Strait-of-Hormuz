@@ -3,6 +3,7 @@ import { manualStatus } from "@/lib/manualStatus";
 import { getOilPrice } from "@/lib/oil/oil";
 
 export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   const [events, oil] = await Promise.all([fetchNews(), getOilPrice()]);
