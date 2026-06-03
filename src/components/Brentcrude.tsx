@@ -11,6 +11,10 @@ export default function Oil({ price, change }: Props) {
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
 
   useEffect(() => {
+    console.debug("Brentcrude props", { price, change });
+  }, [price, change]);
+
+  useEffect(() => {
     if (change > 0) {
       setFlash("up");
     } else if (change < 0) {
@@ -40,7 +44,7 @@ export default function Oil({ price, change }: Props) {
       <p
         className={`text-3xl font-bold transition-all duration-300 ${isBigMove ? "text-yellow-300" : ""} ${flash === "up" ? "animate-[flash-green_0.8s_ease]" : ""} ${flash === "down" ? "animate-[flash-red_0.8s_ease]" : ""}`}
       >
-        ${price.toFixed(2)}
+        {'$' + price.toFixed(2)}
       </p>
 
       <p
