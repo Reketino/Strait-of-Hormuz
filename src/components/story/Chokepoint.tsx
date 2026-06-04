@@ -6,6 +6,10 @@ export default function Chokepoint() {
                     <p className="mg-4 text-sm uppercase tracking-[0.3em] text-gray-500">
                         The Chokepoint
                     </p>
+
+                    <h2 className="text-5xl md:text-7xl font-black tracking-tight">
+                        
+                    </h2>
                 </header>
 
             </article>
