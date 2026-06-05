@@ -8,7 +8,7 @@ export default function Chokepoint() {
                     </p>
 
                     <h2 className="text-5xl md:text-7xl font-black tracking-tight">
-                        
+                     Just a few kilometers wide.   
                     </h2>
                 </header>
 
