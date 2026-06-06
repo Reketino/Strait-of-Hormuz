@@ -12,6 +12,10 @@ export default function Chokepoint() {
                     </h2>
                 </header>
 
+                <div>
+                    
+                </div>
+
             </article>
         </section>
     )
