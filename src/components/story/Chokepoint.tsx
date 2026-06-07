@@ -13,7 +13,11 @@ export default function Chokepoint() {
                 </header>
 
                 <div>
-                    
+                    <p className="text-lg leading-relaxed text-gray-300">
+                       At its narrowest point, the Strait of Hormuz is only a few
+            dozen kilometers across. Yet tankers carrying millions of
+            barrels of oil pass through every day.  
+                    </p>
                 </div>
 
             </article>
