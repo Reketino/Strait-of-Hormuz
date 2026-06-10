@@ -7,6 +7,7 @@ export default function StoryPage(){
         <main className=" bg-black text-white">
             <Hero />
             <Intro />
+            <Chokepoint />
         </main>
 
 );
