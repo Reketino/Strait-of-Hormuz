@@ -6,7 +6,7 @@ export type OilData = {
 
 export async function getOilPrice(): Promise<OilData> {
   const res = await fetch(
-    "https://api.api-ninjas.com/v1/commodityprice?name=brent_crude_oil",
+    "https://api.api-ninjas.com/v1/commodityprice?name=crude_oil",
     {
       headers: {
         "X-api-key": process.env.NINJA_API_KEY!,
@@ -16,7 +16,13 @@ export async function getOilPrice(): Promise<OilData> {
   );
 
   if (!res.ok) {
-    throw new Error("Fetching of oil price has gone wrong");
+    console.error("Oil API error:", res.status, await res.text());
+    
+    return {
+      price: 0,
+      change: 0,
+      updatedAt: Date.now()
+    };
   }
 
   const data = await res.json();
