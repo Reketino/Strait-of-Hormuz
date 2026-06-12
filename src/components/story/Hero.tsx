@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function StoryPage() {
   return (
     <main>
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <figure className="absolute inset-0 bg-black">
-          <img
+          <Image
             src="/hormuz-hero.webp"
             alt=""
             className="w-full h-full object-cover opacity-40"
