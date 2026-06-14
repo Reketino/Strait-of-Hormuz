@@ -29,26 +29,25 @@ export default function LiveData({ initialData }: { initialData: Data }) {
           const res = await fetch("/api/status", { cache: "no-store" });
           const fresh = await res.json();
 
-            console.debug("LiveData: fetched fresh status", fresh);
+          console.debug("LiveData: fetched fresh status", fresh);
 
-            setData((prevData) => {
+          setData((prevData) => {
             const change = fresh.oil.price - prevData.oil.price;
 
-              console.debug("Oil update", {
-                previous: prevData.oil.price,
-                current: fresh.oil.price,
-                calculatedChange: fresh.oil.price - prevData.oil.price,
-              });
+            console.debug("Oil update", {
+              previous: prevData.oil.price,
+              current: fresh.oil.price,
+              calculatedChange: fresh.oil.price - prevData.oil.price,
+            });
 
-              return {
+            return {
               ...fresh,
               oil: {
                 ...fresh.oil,
                 change,
               },
             };
-
-            });
+          });
         } catch (err) {
           console.error("Live update has failed", err);
         }
