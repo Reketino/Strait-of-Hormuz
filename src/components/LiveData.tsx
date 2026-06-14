@@ -32,11 +32,13 @@ export default function LiveData({ initialData }: { initialData: Data }) {
             console.debug("LiveData: fetched fresh status", fresh);
 
             setData((prevData) => {
-            const change = fresh.oil.change != null
-              ? fresh.oil.change
-              : fresh.oil.price - prevData.oil.price;
+            const change = fresh.oil.price - prevData.oil.price;
 
-              console.debug("LiveData: computed oil change", { change, freshPrice: fresh.oil.price, prevPrice: prevData.oil.price });
+              console.debug("Oil update", {
+                previous: prevData.oil.price,
+                current: fresh.oil.price,
+                calculatedChange: fresh.oil.price - prevData.oil.price,
+              });
 
               return {
               ...fresh,
@@ -50,7 +52,7 @@ export default function LiveData({ initialData }: { initialData: Data }) {
         } catch (err) {
           console.error("Live update has failed", err);
         }
-      }, 60000);
+      }, 5000);
     };
 
     startPolling();

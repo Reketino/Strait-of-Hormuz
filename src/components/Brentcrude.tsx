@@ -11,7 +11,7 @@ export default function Oil({ price, change }: Props) {
   const [flash, setFlash] = useState<"up" | "down" | null>(null);
 
   useEffect(() => {
-    console.debug("Brentcrude props", { price, change });
+    console.log("Brentcrude props", { price, change });
   }, [price, change]);
 
   useEffect(() => {
