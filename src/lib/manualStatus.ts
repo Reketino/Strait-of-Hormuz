@@ -1,3 +1,3 @@
 import { StraitStatus } from "@/types/status";
 
-export const manualStatus: StraitStatus = "NO";
+export const manualStatus: StraitStatus = "MAYBE";
