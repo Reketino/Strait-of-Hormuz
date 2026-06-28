@@ -14,7 +14,9 @@ export default function MapSection() {
       </figure>
 
       <article className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center px-6">
-        
+        <div className="max-w-3xl">
+          
+        </div>
       </article>
     </section>
   );
