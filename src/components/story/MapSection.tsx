@@ -15,6 +15,9 @@ export default function MapSection() {
 
       <article className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center px-6">
         <div className="max-w-3xl">
+          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-orange-400">
+            Geography
+          </p>
           
         </div>
       </article>
