@@ -18,6 +18,11 @@ export default function MapSection() {
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-orange-400">
             Geography
           </p>
+          <h2 className="text-5xl font-black tracking-tight md:text-7xl">
+            One of the world's
+            <br />
+            most important chokepoints
+          </h2>
           
         </div>
       </article>
