@@ -5,9 +5,9 @@ export default function MapSection() {
     <section className="relative min-h-screen overflow-hidden">
       <figure className="absolute inset-0">
         <Image
-        src="horrmuz-map.webp"
-        alt="Map of the Strait of Hormuz"
-        className="h-full w-full object-cover opacity-30"
+          src="horrmuz-map.webp"
+          alt="Map of the Strait of Hormuz"
+          className="h-full w-full object-cover opacity-30"
         />
 
         <div className="absolute inset-0 bg-black/60" />
@@ -25,11 +25,10 @@ export default function MapSection() {
           </h2>
 
           <p className="mt-8 text-xl leading relaxed text-gray-300">
-              Connecting the Persian Gulf to the Gulf of Oman,
-            the Strait of Hormuz serves as the primary export
-            route for oil producers across the Middle East.
+            Connecting the Persian Gulf to the Gulf of Oman, the Strait of
+            Hormuz serves as the primary export route for oil producers across
+            the Middle East.
           </p>
-          
         </div>
       </article>
     </section>
