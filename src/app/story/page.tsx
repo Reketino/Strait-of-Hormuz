@@ -1,6 +1,7 @@
 import Hero from "@/components/story/Hero";
 import Intro from "@/components/story/Intro";
 import Chokepoint from "@/components/story/Chokepoint";
+import OilSection from "@/components/story/OilSection";
 import MapSection from "@/components/story/MapSection";
 
 export default function StoryPage() {
@@ -9,6 +10,7 @@ export default function StoryPage() {
       <Hero />
       <Intro />
       <Chokepoint />
+      <OilSection />
       <MapSection />
     </main>
   );
