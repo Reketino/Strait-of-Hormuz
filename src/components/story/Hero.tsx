@@ -7,7 +7,9 @@ export default function StoryPage() {
         <figure className="absolute inset-0 bg-black">
           <Image
             src="/hormuz-hero.webp"
-            alt=""
+            alt="Aerial view of the Strait of Hormuz"
+            fill
+            priority
             className="w-full h-full object-cover opacity-40"
           />
 
