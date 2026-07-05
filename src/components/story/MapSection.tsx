@@ -5,7 +5,7 @@ export default function MapSection() {
     <section className="relative min-h-screen overflow-hidden">
       <figure className="absolute inset-0">
         <Image
-          src="horrmuz-map.webp"
+          src="hormuz-map.webp"
           alt="Map of the Strait of Hormuz"
           className="h-full w-full object-cover opacity-30"
         />
