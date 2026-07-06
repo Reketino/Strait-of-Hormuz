@@ -31,10 +31,9 @@ export default function MapSection() {
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-gray-400">
-              At its narrowest navigable point,
-  shipping lanes are only a few kilometres wide.
-  Every tanker entering or leaving the Persian Gulf
-  must pass through this corridor.
+            At its narrowest navigable point, shipping lanes are only a few
+            kilometres wide. Every tanker entering or leaving the Persian Gulf
+            must pass through this corridor.
           </p>
         </div>
       </article>
