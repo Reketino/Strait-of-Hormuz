@@ -24,10 +24,16 @@ export default function MapSection() {
             most important chokepoints
           </h2>
 
-          <p className="mt-8 text-xl leading relaxed text-gray-300">
+          <p className="mt-8 text-xl leading-relaxed text-gray-300">
             Connecting the Persian Gulf to the Gulf of Oman, the Strait of
             Hormuz serves as the primary export route for oil producers across
             the Middle East.
+          </p>
+
+          <p className="mt-6 text-lg leading-relaxed text-gray-400">
+            At its narrowest navigable point, shipping lanes are only a few
+            kilometres wide. Every tanker entering or leaving the Persian Gulf
+            must pass through this corridor.
           </p>
         </div>
       </article>
