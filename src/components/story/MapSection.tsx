@@ -10,7 +10,7 @@ export default function MapSection() {
           className="h-full w-full object-cover opacity-30"
         />
 
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/20 to-black" />
       </figure>
 
       <article className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center px-6">
