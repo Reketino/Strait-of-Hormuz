@@ -14,7 +14,7 @@ export default function MapSection() {
       </figure>
 
       <article className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center px-6">
-        <div className="max-w-3xl">
+        <header className="max-w-3xl">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-orange-400">
             Geography
           </p>
@@ -35,7 +35,7 @@ export default function MapSection() {
             kilometres wide. Every tanker entering or leaving the Persian Gulf
             must pass through this corridor.
           </p>
-        </div>
+        </header>
       </article>
     </section>
   );
