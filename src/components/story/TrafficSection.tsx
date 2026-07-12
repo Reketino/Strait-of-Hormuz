@@ -18,6 +18,12 @@ export default function TrafficSection() {
                     Oil tankers, LNG carriers, container ships and naval vessels all
                     share one narrow maritime corridor.  
                     </p>
+
+                    <p className="mt-6 text-lg leading-relaxed text-gray-400">
+                    Even a temporary disruption can delay global trade and affect
+                    energy prices around the world.
+                    </p>
+
                 </header>
 
                 
