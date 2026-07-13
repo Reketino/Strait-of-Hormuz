@@ -24,6 +24,17 @@ export default function TrafficSection() {
                     energy prices around the world.
                     </p>
 
+                    <section
+                    aria-label="Illustration of shipping lanes"
+                    className="space-y10"
+                    >
+                        {[1, 2, 3, 4].map((ship) => (
+                            <article key={ship} className="space-y-2">
+                                
+                            </article>
+                        ))}
+                    </section>
+
                 </header>
 
                 
