@@ -30,7 +30,10 @@ export default function TrafficSection() {
                     >
                         {[1, 2, 3, 4].map((ship) => (
                             <article key={ship} className="space-y-2">
-                                
+                             <header className="flex justify-between text-sm text-gray-500">
+                                <span>Oil Tanker</span>
+                                <span>Eastbound</span>
+                                </header>   
                             </article>
                         ))}
                     </section>
