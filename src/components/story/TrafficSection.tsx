@@ -33,6 +33,8 @@ export default function TrafficSection() {
                   <span>Oil Tanker</span>
                   <span>Eastbound</span>
                 </header>
+
+                <div className="h-1 rounded-full bg-white/10" />
               </article>
             ))}
           </section>
