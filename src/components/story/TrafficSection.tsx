@@ -1,3 +1,10 @@
+const ships = [
+  "VLCC Tanker",
+  "LNG Carrier",
+  "Container Ship",
+  "Naval Vessel",
+]
+
 export default function TrafficSection() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden bg-neutral-950">
