@@ -34,7 +34,7 @@ export default function TrafficSection() {
             aria-label="Illustration of shipping lanes"
             className="space-y10"
           >
-            {[1, 2, 3, 4].map((ship) => (
+            {ships.map((ship) => (
               <article key={ship} className="space-y-2">
                 <header className="flex justify-between text-sm text-gray-500">
                   <span>Oil Tanker</span>
