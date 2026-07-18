@@ -3,6 +3,7 @@ import Intro from "@/components/story/Intro";
 import Chokepoint from "@/components/story/Chokepoint";
 import OilSection from "@/components/story/OilSection";
 import MapSection from "@/components/story/MapSection";
+import TrafficSection from "@/components/story/TrafficSection";
 
 export default function StoryPage() {
   return (
@@ -12,6 +13,7 @@ export default function StoryPage() {
       <Chokepoint />
       <OilSection />
       <MapSection />
+      <TrafficSection />
     </main>
   );
 }
