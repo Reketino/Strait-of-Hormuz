@@ -32,12 +32,12 @@ export default function TrafficSection() {
 
           <section
             aria-label="Illustration of shipping lanes"
-            className="space-y10"
+            className="space-y-10"
           >
             {ships.map((ship) => (
               <article key={ship} className="space-y-2">
                 <header className="flex justify-between text-sm text-gray-500">
-                  <span>Oil Tanker</span>
+                  <span>{ship}</span>
                   <span>Eastbound</span>
                 </header>
 
