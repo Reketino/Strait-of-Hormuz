@@ -29,6 +29,7 @@ export default function TrafficSection() {
             Even a temporary disruption can delay global trade and affect energy
             prices around the world.
           </p>
+            </header>
 
           <section
             aria-label="Illustration of shipping lanes"
@@ -45,7 +46,7 @@ export default function TrafficSection() {
               </article>
             ))}
           </section>
-        </header>
+      
       </article>
     </section>
   );
