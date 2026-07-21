@@ -1,9 +1,16 @@
+type Ship = {
+  name: string;
+  direction: "Eastbound" | "Westbound";
+  duration: number;
+  delay: number;
+}
+
 const ships = [
   "VLCC Tanker",
   "LNG Carrier",
   "Container Ship",
   "Naval Vessel",
-]
+];
 
 export default function TrafficSection() {
   return (
