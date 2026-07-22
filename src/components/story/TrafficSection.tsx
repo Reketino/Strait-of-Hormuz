@@ -5,8 +5,15 @@ type Ship = {
   delay: number;
 }
 
-const ships = [
-  "VLCC Tanker",
+
+
+const ships: Ship[] = [
+  {
+  name: "VLCC Tanker",
+  direction: "Eastbound",
+  duration: 18,
+  delay: 0,
+  }
   "LNG Carrier",
   "Container Ship",
   "Naval Vessel",
