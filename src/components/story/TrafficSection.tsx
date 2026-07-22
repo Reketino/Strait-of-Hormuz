@@ -5,11 +5,33 @@ type Ship = {
   delay: number;
 }
 
-const ships = [
-  "VLCC Tanker",
-  "LNG Carrier",
-  "Container Ship",
-  "Naval Vessel",
+
+
+const ships: Ship[] = [
+  {
+  name: "VLCC Tanker",
+  direction: "Eastbound",
+  duration: 18,
+  delay: 0,
+  },
+  {
+  name: "LNG Carrier",
+  direction: "Westbound",
+  duration: 22,
+  delay: 3,
+  },
+  {
+  name: "Container Ship",
+  direction: "Eastbound",
+  duration: 16,
+  delay: 6,
+  },
+  {
+  name: "Naval Vessel",
+  direction: "Westbound",
+  duration: 20,
+  delay: 2,
+  },
 ];
 
 export default function TrafficSection() {
@@ -43,9 +65,9 @@ export default function TrafficSection() {
             className="space-y-10"
           >
             {ships.map((ship) => (
-              <article key={ship} className="space-y-2">
+              <article key={ship.name} className="space-y-2">
                 <header className="flex justify-between text-sm text-gray-500">
-                  <span>{ship}</span>
+                  <span>{ship.name}</span>
                   <span>Eastbound</span>
                 </header>
 
