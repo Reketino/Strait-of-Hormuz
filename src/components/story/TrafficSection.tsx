@@ -3,34 +3,32 @@ type Ship = {
   direction: "Eastbound" | "Westbound";
   duration: number;
   delay: number;
-}
-
-
+};
 
 const ships: Ship[] = [
   {
-  name: "VLCC Tanker",
-  direction: "Eastbound",
-  duration: 18,
-  delay: 0,
+    name: "VLCC Tanker",
+    direction: "Eastbound",
+    duration: 18,
+    delay: 0,
   },
   {
-  name: "LNG Carrier",
-  direction: "Westbound",
-  duration: 22,
-  delay: 3,
+    name: "LNG Carrier",
+    direction: "Westbound",
+    duration: 22,
+    delay: 3,
   },
   {
-  name: "Container Ship",
-  direction: "Eastbound",
-  duration: 16,
-  delay: 6,
+    name: "Container Ship",
+    direction: "Eastbound",
+    duration: 16,
+    delay: 6,
   },
   {
-  name: "Naval Vessel",
-  direction: "Westbound",
-  duration: 20,
-  delay: 2,
+    name: "Naval Vessel",
+    direction: "Westbound",
+    duration: 20,
+    delay: 2,
   },
 ];
 
@@ -58,24 +56,23 @@ export default function TrafficSection() {
             Even a temporary disruption can delay global trade and affect energy
             prices around the world.
           </p>
-            </header>
+        </header>
 
-          <section
-            aria-label="Illustration of shipping lanes"
-            className="space-y-10"
-          >
-            {ships.map((ship) => (
-              <article key={ship.name} className="space-y-2">
-                <header className="flex justify-between text-sm text-gray-500">
-                  <span>{ship.name}</span>
-                  <span>Eastbound</span>
-                </header>
+        <section
+          aria-label="Illustration of shipping lanes"
+          className="space-y-10"
+        >
+          {ships.map((ship) => (
+            <article key={ship.name} className="space-y-2">
+              <header className="flex justify-between text-sm text-gray-500">
+                <span>{ship.name}</span>
+                <span>Eastbound</span>
+              </header>
 
-                <div className="h-1 rounded-full bg-white/10" />
-              </article>
-            ))}
-          </section>
-      
+              <div className="h-1 rounded-full bg-white/10" />
+            </article>
+          ))}
+        </section>
       </article>
     </section>
   );
