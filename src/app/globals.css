@@ -69,3 +69,13 @@ body {
     left: calc(100% + 3rem)
   }
 }
+
+@keyframes ship-west {
+  from {
+    right: -3rem;
+  }
+
+  to {
+    right: calc(100% + 3rem)
+  }
+}
