@@ -79,3 +79,9 @@ body {
     right: calc(100% + 3rem)
   }
 }
+
+.ship-east {
+  animation-name: ship-east;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
