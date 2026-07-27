@@ -85,3 +85,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+.ship-west {
+  animation-name: ship-west;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
