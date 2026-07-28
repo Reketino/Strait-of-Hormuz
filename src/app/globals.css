@@ -90,4 +90,13 @@ body {
   animation-name: ship-west;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    .ship-east,
+    .ship-west {
+      animation: none;
+      left: 50%;
+      right: auto;
+    }
+  }
 }
