@@ -62,11 +62,11 @@ body {
 
 @keyframes ship-east {
   from {
-    left: -3rem
+    left: -3rem;
   }
 
   to {
-    left: calc(100% + 3rem)
+    left: calc(100% + 3rem);
   }
 }
 
@@ -76,7 +76,7 @@ body {
   }
 
   to {
-    right: calc(100% + 3rem)
+    right: calc(100% + 3rem);
   }
 }
 
