@@ -66,12 +66,18 @@ export default function TrafficSection() {
             <article key={ship.name} className="space-y-2">
               <header className="flex justify-between text-sm text-gray-500">
                 <span>{ship.name}</span>
+
                 <span className="text-gray-500">
                   {ship.direction == "Eastbound" ? "->" : "<-"} {ship.direction}
                 </span>
               </header>
 
-              <div className="h-1 rounded-full bg-white/10" />
+              <figure className="relative h-10 overflow-hidden">
+              <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-white/10">
+              
+              </span>
+              
+              </figure>
             </article>
           ))}
         </section>
