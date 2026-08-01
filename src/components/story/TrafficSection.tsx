@@ -74,6 +74,17 @@ export default function TrafficSection() {
 
               <figure className="relative h-10 overflow-hidden">
               <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-white/10">
+
+              <span
+              aria-hidden="true"
+              className={
+                ship.direction === "Eastbound"
+                ? "ship-east absolute top-1/2 -translate-y-1/2 text-2xl"
+                : "ship-west absolute top-1/2 -translate-y-1/2 text-2xl"
+              } 
+              >
+
+              </span>
               
               </span>
               
