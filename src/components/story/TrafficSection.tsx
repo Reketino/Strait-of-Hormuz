@@ -68,7 +68,7 @@ export default function TrafficSection() {
                 <span>{ship.name}</span>
 
                 <span className="text-gray-500">
-                  {ship.direction == "Eastbound" ? "->" : "<-"} {ship.direction}
+                  {ship.direction === "Eastbound" ? "->" : "<-"} {ship.direction}
                 </span>
               </header>
 
@@ -83,7 +83,7 @@ export default function TrafficSection() {
                 : "ship-west absolute top-1/2 -translate-y-1/2 text-2xl"
               } 
               >
-
+                🚢
               </span>
               
               </span>
