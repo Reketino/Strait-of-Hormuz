@@ -73,7 +73,7 @@ export default function TrafficSection() {
               </header>
 
               <figure className="relative h-10 overflow-hidden">
-                <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-white/10">
+                <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-white/10" />
 
                   <span
                     aria-hidden="true"
@@ -85,9 +85,6 @@ export default function TrafficSection() {
                   >
                     🚢
                   </span>
-
-                </span>
-
               </figure>
             </article>
           ))}
