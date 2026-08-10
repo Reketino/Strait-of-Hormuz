@@ -35,3 +35,11 @@ const events: TimelineEvent[] = [
       "The war transforms the Strait from a global shipping artery into a contested maritime zone. Commercial traffic is heavily disrupted, vessels are rerouted or held back, and governments and shipping companies scramble to protect energy supplies.",
   },
 ]
+
+export default function TimelineSection() {
+  return (
+    <section className="bg-black py-40">
+      
+    </section>
+  )
+}
