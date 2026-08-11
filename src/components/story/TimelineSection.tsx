@@ -39,6 +39,9 @@ const events: TimelineEvent[] = [
 export default function TimelineSection() {
   return (
     <section className="bg-black py-40">
+      <article className="mx-auto max-w-5xl px-6">
+        
+      </article>
       
     </section>
   )
