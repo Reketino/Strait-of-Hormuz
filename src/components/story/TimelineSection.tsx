@@ -40,9 +40,13 @@ export default function TimelineSection() {
   return (
     <section className="bg-black py-40">
       <article className="mx-auto max-w-5xl px-6">
-        
+        <header className="mb-24">
+          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-red-400">
+            History
+          </p>
+
+        </header>
       </article>
-      
     </section>
   )
 }
