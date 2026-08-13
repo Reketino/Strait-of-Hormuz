@@ -45,6 +45,12 @@ export default function TimelineSection() {
             History
           </p>
 
+          <h2 className="text-5xl font-black tracking-tight md:text-7xl">
+            A timeline of
+            <br />
+            rising tension.
+          </h2>
+
         </header>
       </article>
     </section>
