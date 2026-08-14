@@ -51,6 +51,14 @@ export default function TimelineSection() {
             rising tension.
           </h2>
 
+          <ol className="relative border-l border-white/10">
+          {events.map((event) => (
+            <li key={event.year} className="relative mb-20 ml-8">
+              
+            </li>
+          ))}
+          </ol>
+
         </header>
       </article>
     </section>
