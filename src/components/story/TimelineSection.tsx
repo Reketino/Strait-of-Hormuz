@@ -55,6 +55,10 @@ export default function TimelineSection() {
           {events.map((event) => (
             <li key={event.year} className="relative mb-20 ml-8">
               <span className="absolute -left-10.25 top-1 h-5 w-5 rounded-full border-4 border-black bg-red-500" />
+
+              <time className="text-sm uppercase tracking-[0.25em] text-gray-500">
+                {event.year}
+              </time>
             </li>
           ))}
           </ol>
