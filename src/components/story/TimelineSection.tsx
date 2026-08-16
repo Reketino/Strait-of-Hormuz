@@ -54,7 +54,7 @@ export default function TimelineSection() {
           <ol className="relative border-l border-white/10">
           {events.map((event) => (
             <li key={event.year} className="relative mb-20 ml-8">
-              
+              <span className="absolute -left-10.25 top-1 h-5 w-5 rounded-full border-4 border-black bg-red-500" />
             </li>
           ))}
           </ol>
