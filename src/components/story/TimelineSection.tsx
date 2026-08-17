@@ -59,6 +59,10 @@ export default function TimelineSection() {
               <time className="text-sm uppercase tracking-[0.25em] text-gray-500">
                 {event.year}
               </time>
+
+              <h3 className="mt-3 text-3xl font-bold">
+                {event.title}
+              </h3>
             </li>
           ))}
           </ol>
