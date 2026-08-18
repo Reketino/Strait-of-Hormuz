@@ -63,6 +63,10 @@ export default function TimelineSection() {
               <h3 className="mt-3 text-3xl font-bold">
                 {event.title}
               </h3>
+
+              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-400">
+                {event.description}
+              </p>
             </li>
           ))}
           </ol>
