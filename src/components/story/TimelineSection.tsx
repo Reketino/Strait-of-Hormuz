@@ -52,23 +52,23 @@ export default function TimelineSection() {
           </h2>
 
           <ol className="relative border-l border-white/10">
-          {events.map((event) => (
-            <li key={event.year} className="relative mb-20 ml-8">
-              <span className="absolute -left-10.25 top-1 h-5 w-5 rounded-full border-4 border-black bg-red-500" />
+            {events.map((event) => (
+              <li key={event.year} className="relative mb-20 ml-8">
+                <span className="absolute -left-10.25 top-1 h-5 w-5 rounded-full border-4 border-black bg-red-500" />
 
-              <time className="text-sm uppercase tracking-[0.25em] text-gray-500">
-                {event.year}
-              </time>
+                <time className="text-sm uppercase tracking-[0.25em] text-gray-500">
+                  {event.year}
+                </time>
 
-              <h3 className="mt-3 text-3xl font-bold">
-                {event.title}
-              </h3>
+                <h3 className="mt-3 text-3xl font-bold">
+                  {event.title}
+                </h3>
 
-              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-400">
-                {event.description}
-              </p>
-            </li>
-          ))}
+                <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-400">
+                  {event.description}
+                </p>
+              </li>
+            ))}
           </ol>
 
         </header>
