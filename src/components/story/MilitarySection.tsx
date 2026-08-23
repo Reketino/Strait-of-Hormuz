@@ -12,7 +12,20 @@ export default function MilitarySection() {
                         <br />
                         under watch.
                     </h2>
+
+                    <p className="mt-8 max-w-xl text-lg leading-relaxed text-gray-300">
+                    The Strait of Hormuz is not only a vital commercial route. It is
+                    also an area of intense military and geopolitical activity.  
+                    </p>
+
+                    <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-400">
+                    Iran maintains a significant military presence around the Strait,
+                    while foreign naval forces have operated in the wider region to
+                    protect shipping and maintain freedom of navigation.  
+                    </p>
                 </header>
+
+                
             </article>
         </section>
     )
