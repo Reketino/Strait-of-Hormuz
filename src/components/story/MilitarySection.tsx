@@ -25,7 +25,9 @@ export default function MilitarySection() {
                     </p>
                 </header>
 
-                
+                 <figure className="relative aspect-4/5 overflow-hidden rounded-2xl border border-white/10 bg-neutral-950">
+                 
+                 </figure>
             </article>
         </section>
     )
