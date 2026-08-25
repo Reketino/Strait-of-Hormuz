@@ -26,6 +26,25 @@ export default function MilitarySection() {
                 </header>
 
                  <figure className="relative aspect-4/5 overflow-hidden rounded-2xl border border-white/10 bg-neutral-950">
+                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.12),transparent_60%)]" />
+
+                 <section
+                 aria-label="Military activity indicators"
+                 className="relative flex h-full flex-col justify-between p-8"
+                 >
+                    <header className="flex items-center justify-between border-b border-white/10 pb-6">
+                    <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                        Strait of Hormuz
+                    </p>
+
+                    <span className="flex items-center gap-2 text-xs uppercase tracking-wider text-red-400">
+                        <span className="h-2 w-2 animate-pulse rounded-full bg-red-500" />
+                          High tension  
+                    </span>
+                    </header>
+
+                    
+                 </section>
                  
                  </figure>
             </article>
