@@ -43,7 +43,18 @@ export default function MilitarySection() {
                     </span>
                     </header>
 
-                    
+                    <figure className="relative aspect-4/5 overflow-hidden rounded-2xl border border-white/10 bg-neutral-950">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.12),transparent_60%)]" />
+
+                    <section
+                    aria-label="Military activity indicators"
+                    className="relative flex h-full flex-col justify-between p-8"
+                    >
+                        
+                    </section>
+
+
+                    </figure>
                  </section>
                  
                  </figure>
