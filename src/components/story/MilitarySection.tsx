@@ -50,7 +50,11 @@ export default function MilitarySection() {
                     aria-label="Military activity indicators"
                     className="relative flex h-full flex-col justify-between p-8"
                     >
-                        
+                        <header className="flex items-center justify-between border-b border-white/10 pb-6">
+                        <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                            Strait of Hormuz
+                        </p>
+                        </header>
                     </section>
 
 
