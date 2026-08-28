@@ -54,6 +54,11 @@ export default function MilitarySection() {
                         <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
                             Strait of Hormuz
                         </p>
+
+                        <span className="flex items-center gap-2 text-xs uppercase tracking-wider text-red-400">
+                            <span className="h-2 w-2 animate-pulse rounded-full bg-red-500" />
+                            High tension
+                        </span>
                         </header>
                     </section>
 
