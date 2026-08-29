@@ -60,6 +60,14 @@ export default function MilitarySection() {
                             High tension
                         </span>
                         </header>
+
+                        <ul className="space-y-6">
+                            <li className="border-l border-red-500/40 pl-5">
+                            <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                            Strategic position
+                            </p>
+                            </li>
+                        </ul>
                     </section>
 
 
