@@ -66,7 +66,13 @@ export default function MilitarySection() {
                             <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
                             Strategic position
                             </p>
+
+                            <p className="mt-2 text-2xl font-bold text-white">
+                                Persian Gulf
+                            </p>
                             </li>
+
+                            
                         </ul>
                     </section>
 
