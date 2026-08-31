@@ -72,7 +72,13 @@ export default function MilitarySection() {
                             </p>
                             </li>
 
+                            <li className="border-l border-white/10 pl-5">
+                            <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                                Maritime traffic
+                            </p>
+
                             
+                            </li>
                         </ul>
                     </section>
 
