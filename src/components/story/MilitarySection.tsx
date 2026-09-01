@@ -77,7 +77,9 @@ export default function MilitarySection() {
                                 Maritime traffic
                             </p>
 
-                            
+                            <p className="mt-2 text-2xl font-bold text-white">
+                                Commercial + military
+                            </p>
                             </li>
                         </ul>
                     </section>
