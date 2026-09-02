@@ -81,6 +81,12 @@ export default function MilitarySection() {
                                 Commercial + military
                             </p>
                             </li>
+
+                            <li className="border-l border-white/10 pl-5">
+                            <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                                Strategic importance
+                            </p>
+                            </li>
                         </ul>
                     </section>
 
