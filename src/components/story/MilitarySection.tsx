@@ -86,6 +86,10 @@ export default function MilitarySection() {
                             <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
                                 Strategic importance
                             </p>
+
+                            <p className="mt-2 text-2xl font-bold text-white">
+                                Global energy
+                            </p>
                             </li>
                         </ul>
                     </section>
