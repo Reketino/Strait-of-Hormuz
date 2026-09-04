@@ -92,6 +92,13 @@ export default function MilitarySection() {
                             </p>
                             </li>
                         </ul>
+
+                        <footer className="border-t border-white/10 pt-6">
+                        <p className="text-sm leading-relaxed text-gray-500">
+                        A narrow maritime corridor where commercial shipping and
+                        military strategy exist side by side.  
+                        </p>
+                        </footer>
                     </section>
 
 
