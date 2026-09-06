@@ -5,6 +5,7 @@ import OilSection from "@/components/story/OilSection";
 import MapSection from "@/components/story/MapSection";
 import TrafficSection from "@/components/story/TrafficSection";
 import TimelineSection from "@/components/story/TimelineSection";
+import MilitarySection from "@/components/story/MilitarySection";
 
 export default function StoryPage() {
   return (
@@ -16,6 +17,7 @@ export default function StoryPage() {
       <MapSection />
       <TrafficSection />
       <TimelineSection />
+      <MilitarySection />
     </main>
   );
 }
