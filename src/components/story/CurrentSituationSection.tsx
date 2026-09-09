@@ -6,6 +6,12 @@ export default function CurrentSituationSecttion() {
                     <p className="mb-4 text-sm uppercase tracking-[0.3em] text-red-400">
                         Current situation
                     </p>
+
+                    <h2 className="text-5xl font-black leading-none tracking-tight md:text-8xl">
+                        Hormuz
+                        <br />
+                        is now a battlefiled
+                    </h2>
                 </header>
             </article>
             
