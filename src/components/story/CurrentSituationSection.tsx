@@ -12,9 +12,15 @@ export default function CurrentSituationSecttion() {
                         <br />
                         is now a battlefiled
                     </h2>
+
+                    <p className="mt-8 max-w-2xl text-xl leading-relaxed text-gray-300">
+                        What was once one of the world's most important shipping
+                        corridors has become a central part of the conflict between the
+                        United States and Iran.
+                    </p>
                 </header>
             </article>
-            
+
         </section>
     )
 }
