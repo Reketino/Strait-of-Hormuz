@@ -19,6 +19,19 @@ export default function CurrentSituationSecttion() {
                         United States and Iran.
                     </p>
                 </header>
+
+                <section
+                aria-label="Current conflict developments"
+                className="mt-32 grid gap-6 lg:grid-cols-3"
+                >
+                    <article className="relative overflow-hidden rounded-2xl border border-red-500/20 bg-red-500/4 p-8">
+                    <header>
+                        <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                            01 — The attack
+                        </p>
+                    </header>
+                    </article>
+                </section>
             </article>
 
         </section>
