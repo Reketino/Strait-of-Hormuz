@@ -29,7 +29,13 @@ export default function CurrentSituationSecttion() {
                             <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
                                 01 — The attack
                             </p>
+
+                            <h3 className="mt-6 text-3xl font-bold">
+                                United States strikes Iran
+                            </h3>
                         </header>
+
+                        
                     </article>
                 </section>
             </article>
