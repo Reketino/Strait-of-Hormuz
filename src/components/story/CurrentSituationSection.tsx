@@ -51,7 +51,6 @@ export default function CurrentSituationSecttion() {
                             Iran closes Hormuz.                        
                         </h3>
                     </header>
-                    
                     </article>
                 </section>
             </article>
