@@ -51,6 +51,12 @@ export default function CurrentSituationSecttion() {
                             Iran closes Hormuz.                        
                         </h3>
                     </header>
+
+                    <p className="mt-6 text-base leading-relaxed text-gray-400">
+                    Iran responds by restricting traffic through the Strait,
+                    turning control of the world's energy chokepoint into a weapon
+                    of war.
+                    </p>
                     </article>
                 </section>
             </article>
