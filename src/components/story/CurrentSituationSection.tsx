@@ -58,6 +58,18 @@ export default function CurrentSituationSecttion() {
                     of war.
                     </p>
                     </article>
+
+                    <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/3 p-8">
+                    <header>
+                        <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                            03 — The consequence
+                        </p>
+
+                        <h3 className="mt-6 text-3xl font-bold">
+                            The world feels the impact.
+                        </h3>
+                    </header>
+                    </article>
                 </section>
             </article>
 
