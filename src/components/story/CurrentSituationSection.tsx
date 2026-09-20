@@ -69,6 +69,12 @@ export default function CurrentSituationSecttion() {
                             The world feels the impact.
                         </h3>
                     </header>
+
+                    <p className="mt-6 text-base leading-relaxed text-gray-400">
+                                      Shipping is disrupted, energy markets react, and governments
+              around the world are forced to confront the consequences of a
+              conflict at one of the planet's most important chokepoints.
+                    </p>
                     </article>
                 </section>
             </article>
