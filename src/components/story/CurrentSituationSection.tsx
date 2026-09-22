@@ -77,8 +77,15 @@ export default function CurrentSituationSecttion() {
                     </p>
                     </article>
                 </section>
-            </article>
 
+                <footer className="mt-32 border-t border-white/10 pt-8">
+                <p className="max-w-3xl text-sm leading-relaxed text-gray-500">
+                    The Strait of Hormuz is no longer simply a route for global
+                    commerce. It has become one of the defining strategic pressure
+                    points of the war.
+                </p>
+                </footer>
+            </article>
         </section>
-    )
+    );
 }
