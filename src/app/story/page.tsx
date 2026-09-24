@@ -6,6 +6,7 @@ import MapSection from "@/components/story/MapSection";
 import TrafficSection from "@/components/story/TrafficSection";
 import TimelineSection from "@/components/story/TimelineSection";
 import MilitarySection from "@/components/story/MilitarySection";
+import CurrentSituationSection from "@/components/story/CurrentSituationSection";
 
 export default function StoryPage() {
   return (
