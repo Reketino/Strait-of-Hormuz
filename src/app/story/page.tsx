@@ -19,6 +19,7 @@ export default function StoryPage() {
       <TrafficSection />
       <TimelineSection />
       <MilitarySection />
+      <CurrentSituationSection />
     </main>
   );
 }
