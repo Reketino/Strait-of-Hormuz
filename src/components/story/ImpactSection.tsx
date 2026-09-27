@@ -3,3 +3,7 @@ type ImpactCardProps = {
   value: string;
   description: string;
 };
+
+const impacts: ImpactCardProps[] = [
+  
+]
