@@ -15,5 +15,11 @@ const impacts: ImpactCardProps[] = [
     value: "20%",
     description:
     "Tankers and other commercial vessels face delays, rerouting and increased risk."
-  }
-]
+  },
+  {
+    label: "Shipping",
+    value: "DISRUPTED",
+    description:
+    "Tankers and other commercial vessels face delays, rerouting and increased risk."
+  },
+];
