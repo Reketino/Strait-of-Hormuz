@@ -23,3 +23,7 @@ const impacts: ImpactCardProps[] = [
     "Tankers and other commercial vessels face delays, rerouting and increased risk."
   },
 ];
+
+export default function ImapctSection() {
+  
+}
