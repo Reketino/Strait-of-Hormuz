@@ -45,6 +45,13 @@ export default function ImapctSection() {
             and economies around the world.
           </p>
         </header>
+
+        <section
+        aria-label="Global impact indicators"
+        className="mt-24 grid gap-6 md:grid-cols-3"
+        >
+          
+        </section>
         
       </article>
     </section>
