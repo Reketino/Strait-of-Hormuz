@@ -50,6 +50,14 @@ export default function ImapctSection() {
         aria-label="Global impact indicators"
         className="mt-24 grid gap-6 md:grid-cols-3"
         >
+          {impacts.map((impact) => (
+            <article
+            key={impact.label}
+            className="rounded-2xl border border-white/10 bg-neutral-950 p-8"
+            >
+              
+            </article>
+          ))}
           
         </section>
         
