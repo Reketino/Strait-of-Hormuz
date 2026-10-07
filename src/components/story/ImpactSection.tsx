@@ -55,6 +55,15 @@ export default function ImapctSection() {
             key={impact.label}
             className="rounded-2xl border border-white/10 bg-neutral-950 p-8"
             >
+              <header>
+                <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                  {impact.label}
+                </p>
+
+                <h3 className="mt-6 text-4xl font-black tracking-tight">
+                  {impact.value}
+                </h3>
+              </header>
               
             </article>
           ))}
