@@ -64,11 +64,20 @@ export default function ImapctSection() {
                   {impact.value}
                 </h3>
               </header>
-              
+              <p className="mt-6 text-base leading-relaxed text-gray-400">
+                {impact.description}
+              </p>
             </article>
           ))}
-          
         </section>
+
+        <footer className="mt-24 border-t border-white/10 pt-8">
+        <p className="max-w-3xl text-sm leading-relaxed text-gray-500">
+            The Strait's importance becomes most visible when traffic stops.
+            What happens here can affect energy security far beyond the Middle
+            East.
+        </p>
+        </footer>
         
       </article>
     </section>
