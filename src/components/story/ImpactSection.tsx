@@ -78,9 +78,7 @@ export default function ImapctSection() {
             East.
         </p>
         </footer>
-        
       </article>
     </section>
-  )
-  
+  );
 }
