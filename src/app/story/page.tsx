@@ -21,6 +21,7 @@ export default function StoryPage() {
       <TimelineSection />
       <MilitarySection />
       <CurrentSituationSection />
+      <ImapctSection />
     </main>
   );
 }
