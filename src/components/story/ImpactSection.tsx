@@ -14,13 +14,13 @@ const impacts: ImpactCardProps[] = [
     label: "Global energy",
     value: "20%",
     description:
-    "Tankers and other commercial vessels face delays, rerouting and increased risk."
+      "Tankers and other commercial vessels face delays, rerouting and increased risk."
   },
   {
     label: "Shipping",
     value: "DISRUPTED",
     description:
-    "Tankers and other commercial vessels face delays, rerouting and increased risk."
+      "Tankers and other commercial vessels face delays, rerouting and increased risk."
   },
 ];
 
@@ -47,13 +47,13 @@ export default function ImapctSection() {
         </header>
 
         <section
-        aria-label="Global impact indicators"
-        className="mt-24 grid gap-6 md:grid-cols-3"
+          aria-label="Global impact indicators"
+          className="mt-24 grid gap-6 md:grid-cols-3"
         >
           {impacts.map((impact) => (
             <article
-            key={impact.label}
-            className="rounded-2xl border border-white/10 bg-neutral-950 p-8"
+              key={impact.label}
+              className="rounded-2xl border border-white/10 bg-neutral-950 p-8"
             >
               <header>
                 <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
@@ -72,11 +72,11 @@ export default function ImapctSection() {
         </section>
 
         <footer className="mt-24 border-t border-white/10 pt-8">
-        <p className="max-w-3xl text-sm leading-relaxed text-gray-500">
+          <p className="max-w-3xl text-sm leading-relaxed text-gray-500">
             The Strait's importance becomes most visible when traffic stops.
             What happens here can affect energy security far beyond the Middle
             East.
-        </p>
+          </p>
         </footer>
       </article>
     </section>
