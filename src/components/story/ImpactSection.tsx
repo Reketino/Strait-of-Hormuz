@@ -8,7 +8,7 @@ const impacts: ImpactCardProps[] = [
   {
     label: "Strait status",
     value: "CLOSED",
-    description: "Commercial shipping through the Strait of Hormuz has been severely disrupted by the conflict."
+    description: "Commercial shipping through the Strait faces severe disruption amid the conflict."
   },
   {
     label: "Global energy",
