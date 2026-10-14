@@ -24,7 +24,7 @@ const impacts: ImpactCardProps[] = [
   },
 ];
 
-export default function ImapctSection() {
+export default function ImpactSection() {
   return (
     <section className="relative overflow-hidden bg-black py-40">
       <article className="mx-auto max-w-7xl px-6">
