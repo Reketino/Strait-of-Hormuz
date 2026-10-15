@@ -8,21 +8,22 @@ const impacts: ImpactCardProps[] = [
   {
     label: "Strait status",
     value: "CLOSED",
-    description: "Commercial shipping through the Strait faces severe disruption amid the conflict."
+    description:
+      "Commercial shipping through the Strait faces severe disruption amid the conflict.",
   },
   {
     label: "Global energy",
     value: "20%",
     description:
-      "Tankers and other commercial vessels face delays, rerouting and increased risk."
+      "Roughly one-fifth of global oil consumption passes through the Strait of Hormuz, making disruptions a major energy security concern.",
   },
   {
     label: "Shipping",
     value: "DISRUPTED",
     description:
-      "Tankers and other commercial vessels face delays, rerouting and increased risk."
+      "Vessels face delays, rerouting and increased security risks as the conflict disrupts maritime traffic.",
   },
-];
+]
 
 export default function ImpactSection() {
   return (
