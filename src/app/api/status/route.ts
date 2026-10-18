@@ -6,11 +6,15 @@ export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const [events, oil] = await Promise.all([fetchNews(), getOilPrice()]);
+  const [newsResult, oilResult] = await Promise.all([fetchNews(), getOilPrice()]);
 
+  const events = newsResult.status === "fulfilled"
+  ? newsResult.value.slice(0.5)
+  : null;
+  
   return Response.json({
     status: manualStatus,
-    events: events.slice(0, 5),
+    events,
     oil,
     updatedAt: new Date().toISOString(),
   });
