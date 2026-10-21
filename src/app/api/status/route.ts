@@ -20,7 +20,7 @@ export async function GET() {
   }
 
   const events =
-    newsResult.status === "fulfilled" ? newsResult.value.slice(0.5) : null;
+    newsResult.status === "fulfilled" ? newsResult.value.slice(0, 5) : [];
 
   const oil = oilResult.status === "fulfilled" ? oilResult.value : null;
 
