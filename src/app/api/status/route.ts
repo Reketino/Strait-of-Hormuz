@@ -19,7 +19,8 @@ export async function GET() {
     console.error("Oil API failed:", oilResult.reason);
   }
 
-  const events = newsResult.status === "fulfilled" ? newsResult.value.slice(0.5) : null;
+  const events =
+    newsResult.status === "fulfilled" ? newsResult.value.slice(0.5) : null;
 
   const oil = oilResult.status === "fulfilled" ? oilResult.value : null;
 
