@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { StraitStatus } from "@/types/status";
+
 type ImpactCardProps = {
   label: string;
   value: string;
