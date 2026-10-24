@@ -3,6 +3,13 @@
 import { useEffect, useState } from "react";
 import { StraitStatus } from "@/types/status";
 
+type EventItem = {
+  title: string;
+  url: string;
+  source: string;
+  publishedAt?: string;
+}
+
 type ImpactCardProps = {
   label: string;
   value: string;
