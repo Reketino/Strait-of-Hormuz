@@ -16,6 +16,16 @@ type ImpactCardProps = {
   description: string;
 };
 
+type StatusData = {
+  status: StraitStatus;
+  events: EventItem[];
+  oil: {
+    price: number;
+    change: number;
+  } | null;
+  updatedAt: string;
+}
+
 const impacts: ImpactCardProps[] = [
   {
     label: "Strait status",
