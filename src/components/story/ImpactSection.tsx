@@ -26,6 +26,17 @@ type StatusData = {
   updatedAt: string;
 }
 
+function getStatusLabel(status: StraitStatus): string {
+  switch (status) {
+    case "YES":
+      return "OPEN";
+    case "NO":
+      return "CLOSED";
+    case "MAYBE":
+      return "UNCERTAIN"
+  }
+}
+
 const impacts: ImpactCardProps[] = [
   {
     label: "Strait status",
