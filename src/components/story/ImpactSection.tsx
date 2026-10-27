@@ -37,28 +37,9 @@ function getStatusLabel(status: StraitStatus): string {
   }
 }
 
-const impacts: ImpactCardProps[] = [
-  {
-    label: "Strait status",
-    value: "CLOSED",
-    description:
-      "Commercial shipping through the Strait faces severe disruption amid the conflict.",
-  },
-  {
-    label: "Global energy",
-    value: "20%",
-    description:
-      "Roughly one-fifth of global oil consumption passes through the Strait of Hormuz, making disruptions a major energy security concern.",
-  },
-  {
-    label: "Shipping",
-    value: "DISRUPTED",
-    description:
-      "Vessels face delays, rerouting and increased security risks as the conflict disrupts maritime traffic.",
-  },
-]
-
 export default function ImpactSection() {
+  const [data, setData] = useState<StatusData | null>(null);
+  
   return (
     <section className="relative overflow-hidden bg-black py-40">
       <article className="mx-auto max-w-7xl px-6">
