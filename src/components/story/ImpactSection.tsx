@@ -49,7 +49,21 @@ export default function ImpactSection() {
   async function fetchStatus() {
     if (document.hidden) return;
 
-    
+    try {
+      const response = await fetch("/api/status", {
+        cache: "no-store",
+      });
+
+      if (!response.ok) {
+        throw new Error(`API request failed: ${response.status}`);
+      }
+
+      const fresh: StatusData = await response.json();
+
+      if (!active) return;
+
+      
+    }
   }
   
   return (
