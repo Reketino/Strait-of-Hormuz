@@ -62,7 +62,14 @@ export default function ImpactSection() {
 
       if (!active) return;
 
-      
+      setData(fresh);
+      setError(false);
+    } catch (err) {
+      console.error("ImpactSection update failed:", err);
+
+      if (active) {
+        setError(true);
+      }
     }
   }
   
