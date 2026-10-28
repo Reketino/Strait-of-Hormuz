@@ -70,6 +70,10 @@ export default function ImpactSection() {
       if (active) {
         setError(true);
       }
+    } finally {
+      if (active) {
+        setLoading(false);
+      }
     }
   }
   
