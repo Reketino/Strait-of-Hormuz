@@ -41,6 +41,10 @@ export default function ImpactSection() {
   const [data, setData] = useState<StatusData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+  })
   
   return (
     <section className="relative overflow-hidden bg-black py-40">
@@ -67,25 +71,7 @@ export default function ImpactSection() {
           aria-label="Global impact indicators"
           className="mt-24 grid gap-6 md:grid-cols-3"
         >
-          {impacts.map((impact) => (
-            <article
-              key={impact.label}
-              className="rounded-2xl border border-white/10 bg-neutral-950 p-8"
-            >
-              <header>
-                <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
-                  {impact.label}
-                </p>
 
-                <h3 className="mt-6 text-4xl font-black tracking-tight">
-                  {impact.value}
-                </h3>
-              </header>
-              <p className="mt-6 text-base leading-relaxed text-gray-400">
-                {impact.description}
-              </p>
-            </article>
-          ))}
         </section>
 
         <footer className="mt-24 border-t border-white/10 pt-8">
