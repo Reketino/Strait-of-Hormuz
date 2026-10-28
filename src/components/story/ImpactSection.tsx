@@ -45,6 +45,12 @@ export default function ImpactSection() {
   useEffect(() => {
     let active = true;
   })
+
+  async function fetchStatus() {
+    if (document.hidden) return;
+
+    
+  }
   
   return (
     <section className="relative overflow-hidden bg-black py-40">
