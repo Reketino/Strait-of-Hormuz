@@ -42,9 +42,9 @@ export default function ImpactSection() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  useEffect(() => {
-    let active = true;
-  })
+
+ useEffect(() => {
+  let active = true;
 
   async function fetchStatus() {
     if (document.hidden) return;
@@ -76,6 +76,18 @@ export default function ImpactSection() {
       }
     }
   }
+
+  void fetchStatus();
+
+  const interval = window.setInterval(() => {
+    void fetchStatus();
+  }, 60_000);
+
+  return () => {
+    active = false;
+    window.clearInterval(interval);
+  };
+}, []);
   
   return (
     <section className="relative overflow-hidden bg-black py-40">
