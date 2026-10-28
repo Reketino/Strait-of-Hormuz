@@ -39,6 +39,8 @@ function getStatusLabel(status: StraitStatus): string {
 
 export default function ImpactSection() {
   const [data, setData] = useState<StatusData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
   
   return (
     <section className="relative overflow-hidden bg-black py-40">
