@@ -88,8 +88,6 @@ export default function ImpactSection() {
     window.clearInterval(interval);
   };
 }, []);
-
-const statusLabel = data ? getStatusLabel(data.status) : "UNAVALIABLE";
   
   return (
     <section className="relative overflow-hidden bg-black py-40">
