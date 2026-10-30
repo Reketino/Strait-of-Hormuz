@@ -18,24 +18,18 @@ type ImpactCardProps = {
 
 type StatusData = {
   status: StraitStatus;
-  events: EventItem[];
+  events: {
+    title: string;
+    url: string;
+    source: string;
+    publishedAt?: string;
+  }[];
   oil: {
     price: number;
     change: number;
   } | null;
   updatedAt: string;
-}
-
-function getStatusLabel(status: StraitStatus): string {
-  switch (status) {
-    case "YES":
-      return "OPEN";
-    case "NO":
-      return "CLOSED";
-    case "MAYBE":
-      return "UNCERTAIN"
-  }
-}
+};
 
 export default function ImpactSection() {
   const [data, setData] = useState<StatusData | null>(null);
