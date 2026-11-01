@@ -32,49 +32,44 @@ type StatusData = {
 };
 
 export default function ImpactSection() {
-  const [data, setData] = useState<StatusData | null>(null);
+  const [oilPrice, setOilPrice] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
 
  useEffect(() => {
   let active = true;
 
-  async function fetchStatus() {
-    if (document.hidden) return;
+    async function fetchOilPrice() {
+      try {
+        const response = await fetch("/api/status", {
+          cache: "no-store",
+        });
 
-    try {
-      const response = await fetch("/api/status", {
-        cache: "no-store",
-      });
+        if (!response.ok) {
+          throw new Error(`API request failed: ${response.status}`);
+        }
 
-      if (!response.ok) {
-        throw new Error(`API request failed: ${response.status}`);
-      }
+        const data: StatusData = await response.json();
 
-      const fresh: StatusData = await response.json();
+        if (active) {
+          setOilPrice(data.oil?.price ?? null);
+        }
+      } catch (error) {
+        console.error("Failed to fetch oil price:", error);
 
-      if (!active) return;
-
-      setData(fresh);
-      setError(false);
-    } catch (err) {
-      console.error("ImpactSection update failed:", err);
-
-      if (active) {
-        setError(true);
-      }
-    } finally {
-      if (active) {
-        setLoading(false);
+        if (active) {
+          setOilPrice(null);
+        }
+      } finally {
+        if (active) {
+          setLoading(false);
+        }
       }
     }
-  }
 
-  void fetchStatus();
+    void fetchOilPrice();
 
   const interval = window.setInterval(() => {
-    void fetchStatus();
+    void fetchOilPrice();
   }, 60_000);
 
   return () => {
