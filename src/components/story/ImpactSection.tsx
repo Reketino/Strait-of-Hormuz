@@ -31,6 +31,10 @@ type StatusData = {
   updatedAt: string;
 };
 
+const impactCards: ImpactCardProps[] = [
+  
+]
+
 export default function ImpactSection() {
   const [oilPrice, setOilPrice] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
