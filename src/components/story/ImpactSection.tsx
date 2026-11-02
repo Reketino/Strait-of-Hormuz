@@ -11,8 +11,8 @@ type EventItem = {
 }
 
 type ImpactCardProps = {
+  number: string;
   label: string;
-  value: string;
   description: string;
 };
 
@@ -32,7 +32,12 @@ type StatusData = {
 };
 
 const impactCards: ImpactCardProps[] = [
-  
+  {
+    number: "01",
+    label: "Energy security",
+    description:
+      "Disruptions to oil shipments through Hormuz can tighten global energy supplies and increase uncertainty in energy markets."
+  },
 ]
 
 export default function ImpactSection() {
