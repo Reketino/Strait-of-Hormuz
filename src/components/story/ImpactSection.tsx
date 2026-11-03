@@ -38,6 +38,12 @@ const impactCards: ImpactCardProps[] = [
     description:
       "Disruptions to oil shipments through Hormuz can tighten global energy supplies and increase uncertainty in energy markets."
   },
+  {
+    number: "02",
+    label: "Global trade",
+    description:
+    "Shipping disruptions can force operators to reassess routes, insurance costs and delivery schedules.",
+  },
 ]
 
 export default function ImpactSection() {
