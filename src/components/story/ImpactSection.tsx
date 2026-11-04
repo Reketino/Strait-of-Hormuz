@@ -44,6 +44,13 @@ const impactCards: ImpactCardProps[] = [
     description:
     "Shipping disruptions can force operators to reassess routes, insurance costs and delivery schedules.",
   },
+
+  {
+    number: "03",
+    label: "Economic pressure",
+    description:
+    "Higher energy and transportation costs can spread through supply chains, putting pressure on businesses and consumers.",
+  },
 ]
 
 export default function ImpactSection() {
