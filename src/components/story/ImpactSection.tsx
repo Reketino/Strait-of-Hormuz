@@ -42,14 +42,14 @@ const impactCards: ImpactCardProps[] = [
     number: "02",
     label: "Global trade",
     description:
-    "Shipping disruptions can force operators to reassess routes, insurance costs and delivery schedules.",
+      "Shipping disruptions can force operators to reassess routes, insurance costs and delivery schedules.",
   },
 
   {
     number: "03",
     label: "Economic pressure",
     description:
-    "Higher energy and transportation costs can spread through supply chains, putting pressure on businesses and consumers.",
+      "Higher energy and transportation costs can spread through supply chains, putting pressure on businesses and consumers.",
   },
 ]
 
@@ -57,8 +57,8 @@ export default function ImpactSection() {
   const [oilPrice, setOilPrice] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
 
- useEffect(() => {
-  let active = true;
+  useEffect(() => {
+    let active = true;
 
     async function fetchOilPrice() {
       try {
@@ -90,16 +90,16 @@ export default function ImpactSection() {
 
     void fetchOilPrice();
 
-  const interval = window.setInterval(() => {
-    void fetchOilPrice();
-  }, 60_000);
+    const interval = window.setInterval(() => {
+      void fetchOilPrice();
+    }, 60_000);
 
-  return () => {
-    active = false;
-    window.clearInterval(interval);
-  };
-}, []);
-  
+    return () => {
+      active = false;
+      window.clearInterval(interval);
+    };
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-black py-40">
       <article className="mx-auto max-w-7xl px-6">
