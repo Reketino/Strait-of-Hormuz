@@ -101,7 +101,10 @@ export default function ImpactSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-black py-40">
+    <section 
+    aria-labelledby="impact-heading"
+    className="relative overflow-hidden bg-black py-40"
+    >
       <article className="mx-auto max-w-7xl px-6">
         <header className="max-w-4xl">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-red-400">
