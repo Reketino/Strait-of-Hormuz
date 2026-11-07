@@ -107,8 +107,8 @@ export default function ImpactSection() {
     >
       <article className="mx-auto max-w-7xl px-6">
         <header className="max-w-4xl">
-          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-red-400">
-            Global impact
+          <p className="mb-5 text-sm uppercase tracking-[0.3em] text-red-400">
+            The global consequnces
           </p>
 
           <h2 className="text-5xl font-black leading-none tracking-tight md:text-8xl">
