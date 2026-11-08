@@ -111,7 +111,9 @@ export default function ImpactSection() {
             The global consequnces
           </p>
 
-          <h2 className="text-5xl font-black leading-none tracking-tight md:text-8xl">
+          <h2 
+          id="impact-heading"
+          className="text-5xl font-black leading-none tracking-tight md:text-8xl">
             When Hormuz
             <br />
             stops moving.
