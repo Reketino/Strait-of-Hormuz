@@ -120,9 +120,9 @@ export default function ImpactSection() {
           </h2>
 
           <p className="mt-8 max-w-2xl text-xl leading-relaxed text-gray-300">
-            A disruption in the Strait does not stay in the Persian Gulf.
-            Its effects can spread through shipping networks, energy markets
-            and economies around the world.
+            The consequences of a disruption in the Strait of Hormuz extend
+            far beyond the Persian Gulf. Energy markets, shipping networks
+            and economies around the world can all feel the effects.
           </p>
         </header>
 
