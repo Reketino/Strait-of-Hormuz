@@ -128,9 +128,20 @@ export default function ImpactSection() {
 
         <section
           aria-label="Global impact indicators"
-          className="mt-24 grid gap-6 md:grid-cols-3"
+          className="mt-20 grid gap-5 md:grid-cols-3"
         >
-
+          {impactCards.map((card) => (
+            <article
+            key={card.number}
+            className="
+            group flex min-h-72 flex-col border border-white/10 
+            bg-white/3 p-7 transition-colors duration-300 
+            hover:border-red-400/50 hover:bg-white/6 md:p-9
+            "
+            >
+              
+            </article>
+          ))}
         </section>
 
         <footer className="mt-24 border-t border-white/10 pt-8">
