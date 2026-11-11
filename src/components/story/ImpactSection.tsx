@@ -139,6 +139,9 @@ export default function ImpactSection() {
             hover:border-red-400/50 hover:bg-white/6 md:p-9
             "
             >
+              <span className="text-sm tracking-widest text-red-400">
+                {card.number}
+              </span>
               
             </article>
           ))}
