@@ -143,6 +143,10 @@ export default function ImpactSection() {
                 {card.number}
               </span>
               
+              <h3 className="mt-12 text-2xl font-bold tracking-tight md:text-3xl">
+                {card.label}
+              </h3>
+              
             </article>
           ))}
         </section>
