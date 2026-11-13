@@ -146,6 +146,10 @@ export default function ImpactSection() {
               <h3 className="mt-12 text-2xl font-bold tracking-tight md:text-3xl">
                 {card.label}
               </h3>
+
+              <p className="mt-4 leading-relaxed text-gray-400">
+                {card.description}
+              </p>
               
             </article>
           ))}
