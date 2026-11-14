@@ -155,6 +155,13 @@ export default function ImpactSection() {
           ))}
         </section>
 
+        <section
+        aria-labelledby="oil-impact-heading"
+        className="mt-20 grid gap-10 border-y border-white/10 py-10 md:grid-cols-[1fr_auto] md:items-center md:py-14"
+        >
+
+        </section>
+
         <footer className="mt-24 border-t border-white/10 pt-8">
           <p className="max-w-3xl text-sm leading-relaxed text-gray-500">
             The Strait's importance becomes most visible when traffic stops.
