@@ -159,6 +159,11 @@ export default function ImpactSection() {
         aria-labelledby="oil-impact-heading"
         className="mt-20 grid gap-10 border-y border-white/10 py-10 md:grid-cols-[1fr_auto] md:items-center md:py-14"
         >
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-gray-500">
+              Energy market indicator
+            </p>
+          </div>
 
         </section>
 
