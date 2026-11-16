@@ -163,6 +163,13 @@ export default function ImpactSection() {
             <p className="text-sm uppercase tracking-[0.25em] text-gray-500">
               Energy market indicator
             </p>
+
+            <h3
+            id="oil-impact-heading"
+            className="mt-3 text-2xl font-bold md:text-4xl"
+            >
+              Brent crude oil
+            </h3>
           </div>
 
         </section>
