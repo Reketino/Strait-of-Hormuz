@@ -170,6 +170,12 @@ export default function ImpactSection() {
             >
               Brent crude oil
             </h3>
+
+            <p className="mt-3 max-w-xl leading-relaxed text-gray-400">
+              Oil prices are one indicator of conditions in the energy market.
+              They are influenced by many factors, including supply risks,
+              demand and geopolitical developments.
+            </p>
           </div>
 
         </section>
