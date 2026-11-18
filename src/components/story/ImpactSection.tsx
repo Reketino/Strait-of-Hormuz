@@ -178,6 +178,10 @@ export default function ImpactSection() {
             </p>
           </div>
 
+          <div className="md:min-w-56 md:text-right">
+            
+          </div>
+
         </section>
 
         <footer className="mt-24 border-t border-white/10 pt-8">
