@@ -179,7 +179,15 @@ export default function ImpactSection() {
           </div>
 
           <div className="md:min-w-56 md:text-right">
-            
+            {loading ? (
+              <p className="text-gray-500">Loading price...</p>
+            ) : oilPrice !== null ? (
+              <>
+
+              </>
+            ) : (
+              <p className="text-gray-500">Price currently unavailable</p>
+            )}
           </div>
 
         </section>
