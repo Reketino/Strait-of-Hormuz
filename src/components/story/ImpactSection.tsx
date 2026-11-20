@@ -183,7 +183,11 @@ export default function ImpactSection() {
               <p className="text-gray-500">Loading price...</p>
             ) : oilPrice !== null ? (
               <>
+              <p className="text-5xl font-black tracking-tight md:text-6xl">
+                ${oilPrice.toFixed(2)}
+              </p>
 
+              
               </>
             ) : (
               <p className="text-gray-500">Price currently unavailable</p>
