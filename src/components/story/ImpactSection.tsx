@@ -187,7 +187,9 @@ export default function ImpactSection() {
                 ${oilPrice.toFixed(2)}
               </p>
 
-              
+              <p className="mt-2 text-sm text-gray-500">
+              USD per barrel
+              </p>              
               </>
             ) : (
               <p className="text-gray-500">Price currently unavailable</p>
