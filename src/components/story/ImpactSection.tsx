@@ -195,10 +195,9 @@ export default function ImpactSection() {
               <p className="text-gray-500">Price currently unavailable</p>
             )}
           </div>
-
         </section>
 
-        <footer className="mt-24 border-t border-white/10 pt-8">
+        <footer className="mt-24 max-w-4xl">
           <p className="max-w-3xl text-sm leading-relaxed text-gray-500">
             The Strait's importance becomes most visible when traffic stops.
             What happens here can affect energy security far beyond the Middle
