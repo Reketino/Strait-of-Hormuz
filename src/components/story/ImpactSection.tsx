@@ -198,10 +198,8 @@ export default function ImpactSection() {
         </section>
 
         <footer className="mt-24 max-w-4xl">
-          <p className="max-w-3xl text-sm leading-relaxed text-gray-500">
-            The Strait's importance becomes most visible when traffic stops.
-            What happens here can affect energy security far beyond the Middle
-            East.
+          <p className="text-sm uppercase tracking-[0.3em] text-red-400">
+            The bigger picture
           </p>
         </footer>
       </article>
