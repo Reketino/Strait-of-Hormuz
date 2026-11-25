@@ -206,6 +206,11 @@ export default function ImpactSection() {
             A regional conflict can have global consequences when it affects
             one of the world & most important maritime chokepoints.
           </p>
+
+          <p className="mt-6 max-w-2xl leading-relaxed text-gray-400">
+            The Strait of Hormuz demonstrates how closely energy security,
+            international shipping and the global economy are connected.
+          </p>
         </footer>
       </article>
     </section>
