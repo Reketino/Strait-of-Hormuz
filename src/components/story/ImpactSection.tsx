@@ -101,9 +101,9 @@ export default function ImpactSection() {
   }, []);
 
   return (
-    <section 
-    aria-labelledby="impact-heading"
-    className="relative overflow-hidden bg-black py-40"
+    <section
+      aria-labelledby="impact-heading"
+      className="relative overflow-hidden bg-black py-40"
     >
       <article className="mx-auto max-w-7xl px-6">
         <header className="max-w-4xl">
@@ -111,9 +111,9 @@ export default function ImpactSection() {
             The global consequnces
           </p>
 
-          <h2 
-          id="impact-heading"
-          className="text-5xl font-black leading-none tracking-tight md:text-8xl">
+          <h2
+            id="impact-heading"
+            className="text-5xl font-black leading-none tracking-tight md:text-8xl">
             When Hormuz
             <br />
             stops moving.
@@ -132,8 +132,8 @@ export default function ImpactSection() {
         >
           {impactCards.map((card) => (
             <article
-            key={card.number}
-            className="
+              key={card.number}
+              className="
             group flex min-h-72 flex-col border border-white/10 
             bg-white/3 p-7 transition-colors duration-300 
             hover:border-red-400/50 hover:bg-white/6 md:p-9
@@ -142,7 +142,7 @@ export default function ImpactSection() {
               <span className="text-sm tracking-widest text-red-400">
                 {card.number}
               </span>
-              
+
               <h3 className="mt-12 text-2xl font-bold tracking-tight md:text-3xl">
                 {card.label}
               </h3>
@@ -150,14 +150,14 @@ export default function ImpactSection() {
               <p className="mt-4 leading-relaxed text-gray-400">
                 {card.description}
               </p>
-              
+
             </article>
           ))}
         </section>
 
         <section
-        aria-labelledby="oil-impact-heading"
-        className="mt-20 grid gap-10 border-y border-white/10 py-10 md:grid-cols-[1fr_auto] md:items-center md:py-14"
+          aria-labelledby="oil-impact-heading"
+          className="mt-20 grid gap-10 border-y border-white/10 py-10 md:grid-cols-[1fr_auto] md:items-center md:py-14"
         >
           <div>
             <p className="text-sm uppercase tracking-[0.25em] text-gray-500">
@@ -165,8 +165,8 @@ export default function ImpactSection() {
             </p>
 
             <h3
-            id="oil-impact-heading"
-            className="mt-3 text-2xl font-bold md:text-4xl"
+              id="oil-impact-heading"
+              className="mt-3 text-2xl font-bold md:text-4xl"
             >
               Brent crude oil
             </h3>
@@ -183,13 +183,13 @@ export default function ImpactSection() {
               <p className="text-gray-500">Loading price...</p>
             ) : oilPrice !== null ? (
               <>
-              <p className="text-5xl font-black tracking-tight md:text-6xl">
-                ${oilPrice.toFixed(2)}
-              </p>
+                <p className="text-5xl font-black tracking-tight md:text-6xl">
+                  ${oilPrice.toFixed(2)}
+                </p>
 
-              <p className="mt-2 text-sm text-gray-500">
-              USD per barrel
-              </p>              
+                <p className="mt-2 text-sm text-gray-500">
+                  USD per barrel
+                </p>
               </>
             ) : (
               <p className="text-gray-500">Price currently unavailable</p>
