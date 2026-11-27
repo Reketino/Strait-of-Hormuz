@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Background from "@/components/Background";
 import { getStatusData } from "@/lib/getStatus";
 import LiveData from "@/components/LiveData";
